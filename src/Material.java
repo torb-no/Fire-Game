@@ -11,13 +11,14 @@ import processing.core.*;
 public class Material {
 
     PApplet p;
+    PImage map;
 
-    Material(PApplet parent) {
-        p = parent;
+    public void iterate(Fire fire) {
+        // Overide with custom code
     }
 
-    void iterate(Fire fire) {
-        // do stuff
+    public void draw() {
+        p.image(map, 0, 0);
     }
 
 }
