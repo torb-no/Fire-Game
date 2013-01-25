@@ -19,10 +19,6 @@ public class Fire {
         position = new PVector(x, y);
     }
 
-    public void iterate() {
-
-    }
-
     public void draw() {
         p.fill(200, 200, 0, 150);
         p.ellipse(position.x, position.y, 20, 20);

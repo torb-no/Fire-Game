@@ -2,21 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c48341b6-e978-41f8-8902-3dceb19bef49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wood.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Background.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ice.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/wood.png" afterPath="" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/simple_test_level.psd" afterPath="$PROJECT_DIR$/levels/simple_test_level.psd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Fire.java" afterPath="$PROJECT_DIR$/src/Fire.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Material.java" afterPath="$PROJECT_DIR$/src/Material.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wood.java" afterPath="$PROJECT_DIR$/src/Wood.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Fire Game.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359147163613" ignored="false" />
     <file path="/main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359151376334" ignored="false" />
-    <file path="/Material.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359153103915" ignored="false" />
+    <file path="/Material.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359156963425" ignored="false" />
     <file path="/Fire.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359153185166" ignored="false" />
-    <file path="/Wood.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359152804533" ignored="false" />
-    <file path="/Main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359153351363" ignored="false" />
-    <file path="/fragment.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359152892561" ignored="false" />
+    <file path="/Wood.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359156204898" ignored="false" />
+    <file path="/Main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359157675809" ignored="false" />
+    <file path="/fragment.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359154180214" ignored="false" />
+    <file path="/Ice.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359156495386" ignored="false" />
+    <file path="/Background.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359157120195" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +85,7 @@
       <file leaf-file-name="Fire.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Fire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="531" selection-end="531" vertical-scroll-proportion="0.8217822">
+            <state line="19" column="5" selection-start="374" selection-end="374" vertical-scroll-proportion="0.56435645">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -106,9 +113,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/Wood.java" />
+        <option value="$PROJECT_DIR$/src/Ice.java" />
         <option value="$PROJECT_DIR$/src/Material.java" />
-        <option value="$PROJECT_DIR$/src/Fire.java" />
+        <option value="$PROJECT_DIR$/src/Background.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Fire.java" />
       </list>
     </option>
   </component>
@@ -414,7 +423,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Wood.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="244" selection-end="244" vertical-scroll-proportion="0.35714287">
+        <state line="9" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.26732674">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -423,16 +432,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Material.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="35" selection-start="312" selection-end="312" vertical-scroll-proportion="0.47524753">
+        <state line="19" column="70" selection-start="418" selection-end="418" vertical-scroll-proportion="0.46534654">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="23" selection-start="255" selection-end="255" vertical-scroll-proportion="0.38613862">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Background.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="293" selection-end="293" vertical-scroll-proportion="0.35643566">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="19" selection-start="371" selection-end="371" vertical-scroll-proportion="0.46534654">
+        <state line="25" column="27" selection-start="500" selection-end="500" vertical-scroll-proportion="0.22772278">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -441,7 +466,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Fire.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="531" selection-end="531" vertical-scroll-proportion="0.8217822">
+        <state line="19" column="5" selection-start="374" selection-end="374" vertical-scroll-proportion="0.56435645">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

@@ -10,12 +10,11 @@ import processing.core.*;
 
 public class Wood extends Material {
 
-    Wood(PApplet parent) {
-        p = parent;
-        map = p.loadImage("wood.png");
+    Wood() {
+        loadMap("wood");
     }
 
-    public void iterate(Fire fire) {
+    public void iterate() {
 
     }
 

@@ -7,43 +7,50 @@
  */
 
 import processing.core.*;
+import sun.jkernel.BackgroundDownloader;
 
 public class Main extends PApplet {
 
     Fire fire;
     PImage levelBackground;
-    Material[] materials = new Material[2];
+    Material[] materials = new Material[3];
 
     public void setup() {
         smooth();
         noStroke();
 
-        loadLevel();
+        loadLevel("test");
     }
 
     public void draw() {
         iterateMaterials();
 
-        image(levelBackground, 0, 0);
         drawMaterials();
         fire.draw();
     }
 
-    void loadLevel() {
-        levelBackground = loadImage("background.png");
-        size(levelBackground.width, levelBackground.height);
-
-        materials[0] = new Wood(this);
-
+    void loadLevel(String levelName) {
         fire = new Fire(this, width-20, height-20);
+
+        Material.fire = fire;
+        Material.p = this;
+        Material.levelName = levelName;
+
+        materials[0] = new Background();
+        materials[1] = new Wood();
+        materials[2] = new Ice();
     }
 
     void iterateMaterials() {
-        materials[0].iterate(fire);
+        for (int i=0; i<materials.length; i++) {
+            materials[i].iterate();
+        }
     }
 
     void drawMaterials() {
-        materials[0].draw();
+        for (int i=0; i<materials.length; i++) {
+            materials[i].draw();
+        }
     }
 
 }
