@@ -19,6 +19,7 @@ public class Main extends PApplet {
         smooth();
         noStroke();
 
+        Material.p = this;
         loadLevel("test");
     }
 
@@ -30,10 +31,9 @@ public class Main extends PApplet {
     }
 
     void loadLevel(String levelName) {
-        fire = new Fire(this, width-20, height-20);
+        fire = new Fire(this, getFirePosition(levelName));
 
         Material.fire = fire;
-        Material.p = this;
         Material.levelName = levelName;
 
         materials[0] = new Background();
@@ -50,6 +50,19 @@ public class Main extends PApplet {
     void drawMaterials() {
         for (int i=0; i<materials.length; i++) {
             materials[i].draw();
+        }
+    }
+
+    PVector getFirePosition(String levelName) {
+        PImage firePos = loadImage(levelName + "/fire_position.png");
+        for (int x=0; x<firePos.width; x++) {
+            for (int y=0; y<firePos.height; y++) {
+                int c = firePos.get(x, y);
+                if (alpha(c) == 255 & brightness(c) == 255) {
+                    return new PVector(x, y);
+                }
+
+            }
         }
     }
 

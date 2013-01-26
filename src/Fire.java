@@ -14,9 +14,9 @@ public class Fire {
     PVector position;
     float energy = 100;
 
-    Fire(PApplet parent, float x, float y) {
+    Fire(PApplet parent, PVector position) {
         p = parent;
-        position = new PVector(x, y);
+        this.position = position;
     }
 
     public void draw() {
