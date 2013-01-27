@@ -14,4 +14,8 @@ public class Ice extends Material {
         loadMap("ice");
     }
 
+    public boolean fireIteration() {
+        return false;
+    }
+
 }

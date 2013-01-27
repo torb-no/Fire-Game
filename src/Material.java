@@ -10,11 +10,12 @@ import processing.core.*;
 
 public class Material {
 
-    PImage map;
     public static PApplet p;
-    public static String levelName;
+    public static Level level;
     public static Fire fire;
 
+    PImage map;
+    public boolean flammable = false;
 
     public void iterate() {
         // overload with appropriate if material should react to flame
@@ -25,7 +26,26 @@ public class Material {
     }
 
     void loadMap(String material) {
-        map = p.loadImage(levelName + "/" + material + ".png");
+        map = p.loadImage(level.name + "/" + material + ".png");
+    }
+
+    public boolean materialExistsAtPosition(PVector position) {
+        return materialExistsAtPosition((int)position.x, (int)position.y);
+    }
+
+    public boolean materialExistsAtPosition(int x, int y) {
+        int pixel = map.get(x, y);
+        return p.alpha(pixel) != 0.0;
+    }
+
+    public boolean materialExistsAtPosition(float x, float y) {
+        return materialExistsAtPosition((int)x, (int)y);
+    }
+
+    public boolean fireIteration() {
+        return true;
+        // Return false in order to prevent next material from affecting the flame
+        // Only fires if flame is actually on the material
     }
 
 }

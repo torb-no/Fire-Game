@@ -12,16 +12,18 @@ public class Fire {
 
     PApplet p;
     PVector position;
-    float energy = 100;
+    PImage woodMap;
 
     Fire(PApplet parent, PVector position) {
         p = parent;
         this.position = position;
+        p.fill(200, 200, 0, 150);
     }
 
     public void draw() {
-        p.fill(200, 200, 0, 150);
+
         p.ellipse(position.x, position.y, 20, 20);
     }
+
 
 }
