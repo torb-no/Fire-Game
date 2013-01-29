@@ -10,11 +10,12 @@ import processing.core.*;
 
 public class Material {
 
-    public static PApplet p;
+    public static TApplet p;
     public static Level level;
     public static Fire fire;
 
-    PImage map;
+    //PImage materialMap;
+    PGraphics materialBuffer;
     public boolean flammable = false;
 
     public void iterate() {
@@ -22,11 +23,15 @@ public class Material {
     }
 
     public void draw() {
-        p.image(map, 0, 0);
+        p.image(materialBuffer, 0, 0);
     }
 
     void loadMap(String material) {
-        map = p.loadImage(level.name + "/" + material + ".png");
+        PImage materialMap = p.loadImage(level.name + "/" + material + ".png");
+        materialBuffer = p.createGraphics(materialMap.width, materialMap.height, p.JAVA2D);
+        materialBuffer.beginDraw();
+        materialBuffer.image(materialMap, 0, 0);
+        materialBuffer.endDraw();
     }
 
     public boolean materialExistsAtPosition(PVector position) {
@@ -34,7 +39,7 @@ public class Material {
     }
 
     public boolean materialExistsAtPosition(int x, int y) {
-        int pixel = map.get(x, y);
+        int pixel = materialBuffer.get(x, y);
         return p.alpha(pixel) != 0.0;
     }
 
@@ -47,5 +52,7 @@ public class Material {
         // Return false in order to prevent next material from affecting the flame
         // Only fires if flame is actually on the material
     }
+
+
 
 }

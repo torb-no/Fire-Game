@@ -10,12 +10,12 @@ import processing.core.*;
 
 public class Level {
 
-    PApplet p;
+    TApplet p;
     Material[] materials = new Material[4];
     Fire fire;
     String name;
 
-    Level(PApplet parent, String name) {
+    Level(TApplet parent, String name) {
         p = parent;
         this.name = name;
 
@@ -55,7 +55,7 @@ public class Level {
         boolean doFireIteration = true;
         for (int i=materials.length-1; i!=0; i--) { // In reverse because top most materials take precedence
             materials[i].iterate();
-            if (doFireIteration && materials[i].materialExistsAtPosition(fire.position))
+            if (doFireIteration && materials[i].materialExistsAtPosition(fire.pos))
                 doFireIteration = materials[i].fireIteration();
         }
     }

@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c48341b6-e978-41f8-8902-3dceb19bef49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Level.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Stone.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TApplet.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/simple_test_level.psd" afterPath="$PROJECT_DIR$/levels/simple_test_level.psd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Background.java" afterPath="$PROJECT_DIR$/src/Background.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Fire.java" afterPath="$PROJECT_DIR$/src/Fire.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ice.java" afterPath="$PROJECT_DIR$/src/Ice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level.java" afterPath="$PROJECT_DIR$/src/Level.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Material.java" afterPath="$PROJECT_DIR$/src/Material.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wood.java" afterPath="$PROJECT_DIR$/src/Wood.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -19,15 +18,17 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359204139794" ignored="false" />
     <file path="/main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359151376334" ignored="false" />
-    <file path="/Material.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359322157604" ignored="false" />
+    <file path="/Material.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456704861" ignored="false" />
     <file path="/Fire.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359305007515" ignored="false" />
-    <file path="/Wood.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359324391624" ignored="false" />
-    <file path="/Main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359306909478" ignored="false" />
+    <file path="/Wood.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359464246472" ignored="false" />
+    <file path="/Main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456662964" ignored="false" />
     <file path="/fragment.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359195906238" ignored="false" />
     <file path="/Ice.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359324592175" ignored="false" />
-    <file path="/Background.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359157120195" ignored="false" />
-    <file path="/Level.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359322377399" ignored="false" />
+    <file path="/Background.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359452382133" ignored="false" />
+    <file path="/Level.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456943082" ignored="false" />
     <file path="/Stone.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359308655356" ignored="false" />
+    <file path="/Helpers.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456513934" ignored="false" />
+    <file path="/TApplet.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359463253961" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,61 +90,6 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Material.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Material.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="5" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Wood.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wood.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="5" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stone.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Stone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="21" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ice.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Ice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="21" selection-start="321" selection-end="321" vertical-scroll-proportion="0.42288557">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Level.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Level.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="13" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -155,7 +101,82 @@
       <file leaf-file-name="Fire.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Fire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="33" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+            <state line="17" column="28" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Level.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Level.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="30" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Material.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Material.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="25" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Background.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Background.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="5" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wood.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Wood.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="26" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.60199004">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TApplet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TApplet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="45" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ice.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="21" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stone.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Stone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="21" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -182,15 +203,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/main.java" />
-        <option value="$PROJECT_DIR$/src/Background.java" />
         <option value="$PROJECT_DIR$/src/Flammable.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Fire.java" />
         <option value="$PROJECT_DIR$/src/Stone.java" />
+        <option value="$PROJECT_DIR$/src/Ice.java" />
+        <option value="$PROJECT_DIR$/src/Fire.java" />
+        <option value="$PROJECT_DIR$/src/Background.java" />
+        <option value="$PROJECT_DIR$/src/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Material.java" />
         <option value="$PROJECT_DIR$/src/Level.java" />
+        <option value="$PROJECT_DIR$/src/TApplet.java" />
         <option value="$PROJECT_DIR$/src/Wood.java" />
-        <option value="$PROJECT_DIR$/src/Ice.java" />
       </list>
     </option>
   </component>
@@ -432,7 +455,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -448,7 +471,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.1891892" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.8120978" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.8120978" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18790218" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -517,16 +540,48 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Background.java">
+    <entry file="file://$USER_HOME$/Dropbox/Skule/4. semester/Game design/Temaoppgave 17/Prototyper/Fire Game/Fire Game.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="293" selection-end="293" vertical-scroll-proportion="0.35643566">
+        <state line="0" column="0" selection-start="0" selection-end="38" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Fire.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="33" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+        <state line="17" column="28" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Background.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Applications/Processing.app/Contents/Resources/Java/core.jar!/processing/core/PApplet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1494" column="0" selection-start="61380" selection-end="61380" vertical-scroll-proportion="-19.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="30" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="21" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -535,24 +590,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Material.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="5" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="13" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -560,9 +597,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wood.java">
+    <entry file="file://$PROJECT_DIR$/src/TApplet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+        <state line="35" column="45" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -578,9 +615,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ice.java">
+    <entry file="file://$PROJECT_DIR$/src/Material.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="321" selection-end="321" vertical-scroll-proportion="0.42288557">
+        <state line="12" column="25" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wood.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="26" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.60199004">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

@@ -8,7 +8,7 @@
 
 import processing.core.*;
 
-public class Main extends PApplet {
+public class Main extends TApplet {
 
     Level level;
 
@@ -20,8 +20,6 @@ public class Main extends PApplet {
 
     public void draw() {
         level.iterate();
-
-
         level.draw();
     }
 
