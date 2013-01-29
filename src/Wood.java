@@ -16,7 +16,7 @@ public class Wood extends Material {
         loadMap("wood");
         flammable = true;
         gMask = p.createGraphics(p.width, p.height, p.JAVA2D);
-        p.setMaskBasedOnAlpha(gMask, materialBuffer);
+        p.setImageBasedOnAlpha(gMask, materialBuffer);
     }
 
     public void iterate() {
@@ -50,7 +50,7 @@ public class Wood extends Material {
             gMask.endDraw();
         }
 
-        p.setAlphaBasedOnMask(materialBuffer, gMask);
+        p.setAlphaBasedOnImage(materialBuffer, gMask);
 
         return false;
     }

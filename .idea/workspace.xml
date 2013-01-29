@@ -22,7 +22,7 @@
     <file path="/Level.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456943082" ignored="false" />
     <file path="/Stone.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359308655356" ignored="false" />
     <file path="/Helpers.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456513934" ignored="false" />
-    <file path="/TApplet.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359463253961" ignored="false" />
+    <file path="/TApplet.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359474698417" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,10 +134,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wood.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Wood.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wood.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="33" selection-start="899" selection-end="899" vertical-scroll-proportion="0.82587063">
+            <state line="52" column="16" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -145,10 +145,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TApplet.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TApplet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TApplet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="68" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+            <state line="30" column="33" selection-start="792" selection-end="792" vertical-scroll-proportion="0.52238804">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -206,8 +206,8 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Material.java" />
         <option value="$PROJECT_DIR$/src/Level.java" />
-        <option value="$PROJECT_DIR$/src/TApplet.java" />
         <option value="$PROJECT_DIR$/src/Wood.java" />
+        <option value="$PROJECT_DIR$/src/TApplet.java" />
       </list>
     </option>
   </component>
@@ -591,15 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Material.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="25" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
@@ -609,9 +600,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TApplet.java">
+    <entry file="file://$PROJECT_DIR$/src/Stone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="68" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+        <state line="17" column="21" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -620,7 +611,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wood.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="33" selection-start="899" selection-end="899" vertical-scroll-proportion="0.82587063">
+        <state line="52" column="16" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TApplet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="33" selection-start="792" selection-end="792" vertical-scroll-proportion="0.52238804">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

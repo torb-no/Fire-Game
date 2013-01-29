@@ -12,31 +12,33 @@ public class TApplet extends PApplet {
 
     // Extend PApplet with missing functionality
 
-    public void setMaskBasedOnAlpha(PImage target, PImage alphaImg) {
+    public void setImageBasedOnAlpha(PImage target, PImage alphaSource) {
         target.loadPixels();
-        alphaImg.loadPixels();
+        alphaSource.loadPixels();
 
         for (int i=0; i<target.pixels.length; i++) {
-            int grey = (int) alpha(alphaImg.pixels[i]);
+            int grey = (int) alpha(alphaSource.pixels[i]);
             target.pixels[i] = color(grey);
         }
 
         target.updatePixels();
     }
 
-    public void setAlphaBasedOnMask(PImage target, PImage maskImg) {
+    public void setAlphaBasedOnImage(PImage target, PImage imageSource) {
+        // TODO: Fix this motherfucker
+
         target.loadPixels();
-        maskImg.loadPixels();
+        imageSource.loadPixels();
 
         for (int i=0; i<target.pixels.length; i++) {
             float r = red(target.pixels[i]),
                   g = green(target.pixels[i]),
                   b = blue(target.pixels[i]);
-            float ar = red(maskImg.pixels[i]),
-                  ag = green(maskImg.pixels[i]),
-                  ab = blue(maskImg.pixels[i]);
+            float ar = red(imageSource.pixels[i]),
+                  ag = green(imageSource.pixels[i]),
+                  ab = blue(imageSource.pixels[i]);
             float a = (ar + ag + ab) / 3;
-            target.pixels[i] = color(r, g, b, a);
+            target.pixels[i] = color(r, g, b, imageSource.pixels[i]);
         }
 
         target.updatePixels();
