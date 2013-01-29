@@ -25,12 +25,12 @@ public class Wood extends Material {
 
     public void draw() {
         p.image(materialBuffer, 0, 0);
-        //p.image(gMask, 0, 0);
+        p.image(gMask, 0, 0);
 
     }
 
     public boolean fireIteration() {
-        PVector prevFirePos = fire.pos;
+        PVector prevFirePos = new PVector(fire.pos.x, fire.pos.y);
 
         if (p.keyPressed) {
             if      (p.keyCode == p.LEFT) moveFireX(-1);
@@ -43,20 +43,12 @@ public class Wood extends Material {
             fire.pos.y = y;
 
         // burn between previous pos and current pos
-
-
-       /* gMask.beginDraw();
-        gMask.stroke(0);
-
-        PVector currentPosOffset = new PVector(fire.pos.x, fire.pos.y);
-        if (fire.pos.x < prevFirePos.x) currentPosOffset.x += 2;
-        else currentPosOffset.x -= 2;
-        if (fire.pos.y < prevFirePos.y) currentPosOffset.y += 2;
-        else currentPosOffset.y -= 2;
-
-        gMask.line(prevFirePos.x, prevFirePos.y, currentPosOffset.x, currentPosOffset.y);
-        gMask.endDraw();*/
-
+        if (fire.pos.x != prevFirePos.x || fire.pos.y != prevFirePos.y) {
+            gMask.beginDraw();
+            gMask.stroke(0);
+            gMask.point(prevFirePos.x, prevFirePos.y);
+            gMask.endDraw();
+        }
 
         p.setAlphaBasedOnMask(materialBuffer, gMask);
 

@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c48341b6-e978-41f8-8902-3dceb19bef49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TApplet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Background.java" afterPath="$PROJECT_DIR$/src/Background.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Fire.java" afterPath="$PROJECT_DIR$/src/Fire.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level.java" afterPath="$PROJECT_DIR$/src/Level.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Material.java" afterPath="$PROJECT_DIR$/src/Material.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TApplet.java" afterPath="$PROJECT_DIR$/src/TApplet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wood.java" afterPath="$PROJECT_DIR$/src/Wood.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Fire Game.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +14,7 @@
     <file path="/main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359151376334" ignored="false" />
     <file path="/Material.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456704861" ignored="false" />
     <file path="/Fire.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359305007515" ignored="false" />
-    <file path="/Wood.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359464246472" ignored="false" />
+    <file path="/Wood.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359472595824" ignored="false" />
     <file path="/Main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456662964" ignored="false" />
     <file path="/fragment.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359195906238" ignored="false" />
     <file path="/Ice.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359324592175" ignored="false" />
@@ -143,7 +137,7 @@
       <file leaf-file-name="Wood.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Wood.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="26" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.60199004">
+            <state line="40" column="33" selection-start="899" selection-end="899" vertical-scroll-proportion="0.82587063">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -154,7 +148,7 @@
       <file leaf-file-name="TApplet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TApplet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="45" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
+            <state line="26" column="68" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -597,15 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TApplet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="45" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stone.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="21" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
@@ -624,9 +609,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/TApplet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="68" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wood.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="26" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.60199004">
+        <state line="40" column="33" selection-start="899" selection-end="899" vertical-scroll-proportion="0.82587063">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

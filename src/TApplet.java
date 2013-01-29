@@ -25,8 +25,6 @@ public class TApplet extends PApplet {
     }
 
     public void setAlphaBasedOnMask(PImage target, PImage maskImg) {
-        // TODO: FIX THIS BUGGY MOTHERFUCKER:
-
         target.loadPixels();
         maskImg.loadPixels();
 
