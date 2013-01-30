@@ -20,7 +20,7 @@ public class Level {
         p = parent;
         this.name = name;
 
-        PImage fireImage = p.loadImage(name + "/fire_position.png");
+        PImage fireImage = p.loadImage(p.sketchPath + "/levels/" + name + "/fire_position.png");
         PVector firePosition = new PVector(0, 0);
         for (int x=0; x<fireImage.width; x++) {
             for (int y=0; y<fireImage.height; y++) {
@@ -35,7 +35,9 @@ public class Level {
         Material.fire = fire;
 
         // Load materials
-        File levelFolder = new File("/Users/torbjorn/Git/Fire Game/src/data/" + name);
+        String levelPath = p.sketchPath + "/levels/" + name;
+        File levelFolder = new File(levelPath);
+
         String[] materialFiles = levelFolder.list(new FilenameFilter() {
             @Override
             public boolean accept(File file, String s) {
@@ -46,12 +48,12 @@ public class Level {
         materials = new Material[materialFiles.length];
         for (int i=0; i<materialFiles.length; i++) {
             String type = materialFiles[i].substring(11).replace(".png", ""),
-                   filePath = name + "/" + materialFiles[i];
-            if      (type.contentEquals("visual"))   { materials[i] = new Visual(filePath); }
-            else if (type.contentEquals("stable"))   { materials[i] = new Stable(filePath); }
-            else if (type.contentEquals("burnable")) { materials[i] = new Burnable(filePath); }
-            else if (type.contentEquals("meltable")) { materials[i] = new Meltable(filePath); }
-            else { p.println("Did not recognize material type:" + type); }
+                   filePath = p.sketchPath + "/levels/" + name + "/" + materialFiles[i];
+            if      (type.contentEquals("visual"))   materials[i] = new Visual(filePath);
+            else if (type.contentEquals("stable"))   materials[i] = new Stable(filePath);
+            else if (type.contentEquals("burnable")) materials[i] = new Burnable(filePath);
+            else if (type.contentEquals("meltable")) materials[i] = new Meltable(filePath);
+            else p.println("Error: unrecognized material type '" + type + "'");
         }
 
     }
@@ -68,7 +70,6 @@ public class Level {
     void iterateMaterials() {
         boolean doFireIteration = true;
         for (int i=materials.length-1; i!=0; i--) { // In reverse because top most materials take precedence
-            p.println(i);
             materials[i].iterate();
             if (doFireIteration && materials[i].materialExistsAtPosition(fire.pos))
                 doFireIteration = materials[i].fireIteration();

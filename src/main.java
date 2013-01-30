@@ -12,6 +12,10 @@ public class Main extends TApplet {
 
     Level level;
 
+    public static void main(String args[]) {
+        PApplet.main(new String[] { "--present", "Main" });
+    }
+
     public void setup() {
         noLoop(); // Half the loop ’til we are ready
         smooth();
