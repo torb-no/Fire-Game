@@ -8,9 +8,9 @@
 
 import processing.core.*;
 
-public class Solid extends Material {
+public class Stable extends Material {
 
-    Solid() {
+    Stable() {
         loadMap("stone");
     }
 

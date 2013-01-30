@@ -24,21 +24,4 @@ public class TApplet extends PApplet {
         target.updatePixels();
     }
 
-    public void setAlphaBasedOnImage(PImage target, PImage imageSource) {
-        // TODO: Fix this motherfucker
-
-        target.loadPixels();
-        imageSource.loadPixels();
-
-        for (int i=0; i<target.pixels.length; i++) {
-            float r = red(target.pixels[i]),
-                  g = green(target.pixels[i]),
-                  b = blue(target.pixels[i]),
-                  a = brightness(imageSource.pixels[i]);
-            target.pixels[i] = color(r, g, b, a);
-        }
-
-        target.updatePixels();
-    }
-
 }

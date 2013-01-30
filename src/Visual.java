@@ -5,9 +5,9 @@
  * Time: 00:36
  * To change this template use File | Settings | File Templates.
  */
-public class Background extends Material {
+public class Visual extends Material {
 
-    Background() {
+    Visual() {
         loadMap("background");
         p.size(materialImage.width, materialImage.height);
     }

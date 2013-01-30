@@ -36,10 +36,10 @@ public class Level {
         Material.level = this;
         Material.fire = fire;
 
-        materials[0] = new Background();
+        materials[0] = new Visual();
         materials[1] = new Burnable();
         materials[2] = new Meltable();
-        materials[3] = new Solid();
+        materials[3] = new Stable();
     }
 
     public void iterate() {
