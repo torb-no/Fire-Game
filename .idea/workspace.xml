@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c48341b6-e978-41f8-8902-3dceb19bef49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/torbjorn.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Background.java" afterPath="$PROJECT_DIR$/src/Visual.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Solid.java" afterPath="$PROJECT_DIR$/src/Stable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level.java" afterPath="$PROJECT_DIR$/src/Level.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TApplet.java" afterPath="$PROJECT_DIR$/src/TApplet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Material.java" afterPath="$PROJECT_DIR$/src/Material.java" />
     </list>
     <ignored path="Fire Game.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,7 +83,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="22" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+            <state line="17" column="39" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -99,7 +94,7 @@
       <file leaf-file-name="Material.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Material.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="39" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.5522388">
+            <state line="42" column="50" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.50248754">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -194,14 +189,14 @@
         <option value="$PROJECT_DIR$/src/Helpers.java" />
         <option value="$PROJECT_DIR$/src/Level.java" />
         <option value="$PROJECT_DIR$/src/Background.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Material.java" />
         <option value="$PROJECT_DIR$/src/Wood.java" />
         <option value="$PROJECT_DIR$/src/Solid.java" />
         <option value="$PROJECT_DIR$/src/Ice.java" />
         <option value="$PROJECT_DIR$/src/Meltable.java" />
         <option value="$PROJECT_DIR$/src/Visual.java" />
         <option value="$PROJECT_DIR$/src/TApplet.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Material.java" />
       </list>
     </option>
   </component>
@@ -576,6 +571,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Visual.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="8" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="21" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TApplet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="19" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
@@ -585,9 +596,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stable.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+        <state line="17" column="39" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -603,25 +614,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Visual.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="8" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Material.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="39" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.5522388">
+        <state line="42" column="50" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.50248754">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

@@ -14,7 +14,6 @@ public class Material {
     public static Level level;
     public static Fire fire;
 
-    //PImage materialMap;
     PImage materialImage;
     PGraphics materialMask;
     public boolean flammable = false;
@@ -41,7 +40,7 @@ public class Material {
     }
 
     public boolean materialExistsAtPosition(int x, int y) {
-        return materialMask.get(x, y) == -1;
+        return materialMask.get(x, y) != -16777216;
     }
 
     public boolean materialExistsAtPosition(float x, float y) {
