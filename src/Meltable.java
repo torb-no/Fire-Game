@@ -1,17 +1,17 @@
 /**
  * Created with IntelliJ IDEA.
  * User: torbjorn
- * Date: 27.01.13
- * Time: 18:43
+ * Date: 25.01.13
+ * Time: 23:50
  * To change this template use File | Settings | File Templates.
  */
 
 import processing.core.*;
 
-public class Stone extends Material {
+public class Meltable extends Material {
 
-    Stone() {
-        loadMap("stone");
+    Meltable() {
+        loadMap("ice");
     }
 
     public boolean fireIteration() {

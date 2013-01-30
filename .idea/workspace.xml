@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c48341b6-e978-41f8-8902-3dceb19bef49" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wood.java" afterPath="$PROJECT_DIR$/src/Wood.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ice.java" afterPath="$PROJECT_DIR$/src/Meltable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Stone.java" afterPath="$PROJECT_DIR$/src/Solid.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Wood.java" afterPath="$PROJECT_DIR$/src/Burnable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level.java" afterPath="$PROJECT_DIR$/src/Level.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Fire Game.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wood.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Wood.java">
+      <file leaf-file-name="Burnable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Burnable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="56" selection-start="574" selection-end="574" vertical-scroll-proportion="0.17247097">
+            <state line="32" column="27" selection-start="748" selection-end="748" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -133,10 +137,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ice.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ice.java">
+      <file leaf-file-name="Meltable.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Meltable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="21" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
+            <state line="15" column="0" selection-start="272" selection-end="272" vertical-scroll-proportion="0.37313432">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -144,8 +148,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stone.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Stone.java">
+      <file leaf-file-name="Solid.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Solid.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="17" column="21" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
               <folding>
@@ -185,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/Flammable.java" />
         <option value="$PROJECT_DIR$/src/Stone.java" />
-        <option value="$PROJECT_DIR$/src/Ice.java" />
         <option value="$PROJECT_DIR$/src/Fire.java" />
         <option value="$PROJECT_DIR$/src/Helpers.java" />
         <option value="$PROJECT_DIR$/src/Level.java" />
@@ -194,6 +197,9 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Material.java" />
         <option value="$PROJECT_DIR$/src/Wood.java" />
+        <option value="$PROJECT_DIR$/src/Solid.java" />
+        <option value="$PROJECT_DIR$/src/Ice.java" />
+        <option value="$PROJECT_DIR$/src/Meltable.java" />
       </list>
     </option>
   </component>
@@ -552,9 +558,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ice.java">
+    <entry file="file://$PROJECT_DIR$/src/Background.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
+        <state line="11" column="49" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Applications/Processing.app/Contents/Resources/Java/core.jar!/processing/core/PConstants.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="21" selection-start="925" selection-end="925" vertical-scroll-proportion="-0.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="22" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Burnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="27" selection-start="748" selection-end="748" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -570,38 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Background.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="49" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Applications/Processing.app/Contents/Resources/Java/core.jar!/processing/core/PConstants.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="21" selection-start="925" selection-end="925" vertical-scroll-proportion="-0.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Material.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="39" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0">
@@ -611,9 +608,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wood.java">
+    <entry file="file://$PROJECT_DIR$/src/Solid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="56" selection-start="574" selection-end="574" vertical-scroll-proportion="0.17247097">
+        <state line="17" column="21" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Meltable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="272" selection-end="272" vertical-scroll-proportion="0.37313432">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

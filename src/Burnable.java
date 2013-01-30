@@ -8,9 +8,9 @@
 
 import processing.core.*;
 
-public class Wood extends Material {
+public class Burnable extends Material {
 
-    Wood() {
+    Burnable() {
         loadMap("wood");
         flammable = true;
     }
@@ -31,7 +31,6 @@ public class Wood extends Material {
         float y = fire.pos.y - 1;
         if (level.positionIsFlammable(fire.pos.x, y))
             fire.pos.y = y;
-
 
         // burn between previous pos and current pos
         if (fire.pos.x != prevFirePos.x || fire.pos.y != prevFirePos.y) {

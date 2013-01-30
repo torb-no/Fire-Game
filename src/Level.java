@@ -37,9 +37,9 @@ public class Level {
         Material.fire = fire;
 
         materials[0] = new Background();
-        materials[1] = new Wood();
-        materials[2] = new Ice();
-        materials[3] = new Stone();
+        materials[1] = new Burnable();
+        materials[2] = new Meltable();
+        materials[3] = new Solid();
     }
 
     public void iterate() {
