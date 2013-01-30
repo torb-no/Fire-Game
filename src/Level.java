@@ -7,11 +7,12 @@
  */
 
 import processing.core.*;
+import java.io.*;
 
 public class Level {
 
     TApplet p;
-    Material[] materials = new Material[4];
+    Material[] materials;
     Fire fire;
     String name;
 
@@ -24,10 +25,7 @@ public class Level {
         for (int x=0; x<fireImage.width; x++) {
             for (int y=0; y<fireImage.height; y++) {
                 int c = fireImage.get(x, y);
-                if (p.alpha(c) == 255 & p.brightness(c) == 255) {
-                    firePosition = new PVector(x, y);
-                }
-
+                if (p.alpha(c) == 255 & p.brightness(c) == 255) firePosition = new PVector(x, y);
             }
         }
         fire = new Fire(p, firePosition);
@@ -36,10 +34,26 @@ public class Level {
         Material.level = this;
         Material.fire = fire;
 
-        materials[0] = new Visual();
-        materials[1] = new Burnable();
-        materials[2] = new Meltable();
-        materials[3] = new Stable();
+        // Load materials
+        File levelFolder = new File("/Users/torbjorn/Git/Fire Game/src/data/" + name);
+        String[] materialFiles = levelFolder.list(new FilenameFilter() {
+            @Override
+            public boolean accept(File file, String s) {
+                return s.startsWith("material");
+            }
+        });
+
+        materials = new Material[materialFiles.length];
+        for (int i=0; i<materialFiles.length; i++) {
+            String type = materialFiles[i].substring(12),
+                   filename = name + "/" + materialFiles[i];
+            p.println(filename);
+            if      (type == "visual")   materials[i] = new Visual(filename);
+            else if (type == "stable")   materials[i] = new Stable(filename);
+            else if (type == "burnable") materials[i] = new Burnable(filename);
+            else if (type == "meltable") materials[i] = new Meltable(filename);
+        }
+
     }
 
     public void iterate() {
@@ -54,6 +68,7 @@ public class Level {
     void iterateMaterials() {
         boolean doFireIteration = true;
         for (int i=materials.length-1; i!=0; i--) { // In reverse because top most materials take precedence
+            p.println(i);
             materials[i].iterate();
             if (doFireIteration && materials[i].materialExistsAtPosition(fire.pos))
                 doFireIteration = materials[i].fireIteration();

@@ -7,8 +7,8 @@
  */
 public class Visual extends Material {
 
-    Visual() {
-        loadMap("background");
+    Visual(String filename) {
+        loadMap(filename);
         p.size(materialImage.width, materialImage.height);
     }
 

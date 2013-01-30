@@ -10,8 +10,8 @@ import processing.core.*;
 
 public class Burnable extends Material {
 
-    Burnable() {
-        loadMap("wood");
+    Burnable(String filename) {
+        loadMap(filename);
         flammable = true;
     }
 

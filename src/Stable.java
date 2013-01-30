@@ -10,8 +10,8 @@ import processing.core.*;
 
 public class Stable extends Material {
 
-    Stable() {
-        loadMap("stone");
+    Stable(String filename) {
+        loadMap(filename);
     }
 
     public boolean fireIteration() {

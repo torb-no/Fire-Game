@@ -28,19 +28,19 @@ public class Material {
         p.image(materialImage, 0, 0);
     }
 
-    void loadMap(String material) {
-        this.material = material;
-        materialImage = p.loadImage(level.name + "/" + material + ".png");
+    void loadMap(String filename) {
+        this.material = filename;
+        materialImage = p.loadImage(filename);
         materialMask = p.createGraphics(materialImage.width, materialImage.height, p.P2D);
         p.setImageBasedOnAlpha(materialMask, materialImage);
     }
 
-    public boolean materialExistsAtPosition(PVector position) {
-        return materialExistsAtPosition((int)position.x, (int)position.y);
-    }
-
     public boolean materialExistsAtPosition(int x, int y) {
         return materialMask.get(x, y) != -16777216;
+    }
+
+    public boolean materialExistsAtPosition(PVector position) {
+        return materialExistsAtPosition((int)position.x, (int)position.y);
     }
 
     public boolean materialExistsAtPosition(float x, float y) {

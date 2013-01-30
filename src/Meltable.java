@@ -10,8 +10,8 @@ import processing.core.*;
 
 public class Meltable extends Material {
 
-    Meltable() {
-        loadMap("ice");
+    Meltable(String filename) {
+        loadMap(filename);
     }
 
     public boolean fireIteration() {

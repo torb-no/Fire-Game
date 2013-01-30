@@ -15,7 +15,7 @@ public class Main extends TApplet {
     public void setup() {
         smooth();
         noStroke();
-        level = new Level(this, "level1");
+        level = new Level(this, "level1b");
     }
 
     public void draw() {
