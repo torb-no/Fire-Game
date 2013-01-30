@@ -10,8 +10,6 @@ import processing.core.*;
 
 public class Wood extends Material {
 
-    PGraphics gMask;
-
     Wood() {
         loadMap("wood");
         flammable = true;
@@ -34,16 +32,14 @@ public class Wood extends Material {
         if (level.positionIsFlammable(fire.pos.x, y))
             fire.pos.y = y;
 
-        /*
+
         // burn between previous pos and current pos
         if (fire.pos.x != prevFirePos.x || fire.pos.y != prevFirePos.y) {
-            gMask.beginDraw();
-            gMask.stroke(0);
-            gMask.point(prevFirePos.x, prevFirePos.y);
-            gMask.endDraw();
+            materialMask.beginDraw();
+            materialMask.stroke(0);
+            materialMask.point(prevFirePos.x, prevFirePos.y);
+            materialMask.endDraw();
         }
-
-        p.setAlphaBasedOnImage(materialBuffer, gMask);*/
 
         return false;
     }
