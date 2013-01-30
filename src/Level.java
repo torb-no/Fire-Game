@@ -45,13 +45,13 @@ public class Level {
 
         materials = new Material[materialFiles.length];
         for (int i=0; i<materialFiles.length; i++) {
-            String type = materialFiles[i].substring(12),
-                   filename = name + "/" + materialFiles[i];
-            p.println(filename);
-            if      (type == "visual")   materials[i] = new Visual(filename);
-            else if (type == "stable")   materials[i] = new Stable(filename);
-            else if (type == "burnable") materials[i] = new Burnable(filename);
-            else if (type == "meltable") materials[i] = new Meltable(filename);
+            String type = materialFiles[i].substring(11).replace(".png", ""),
+                   filePath = name + "/" + materialFiles[i];
+            if      (type.contentEquals("visual"))   { materials[i] = new Visual(filePath); }
+            else if (type.contentEquals("stable"))   { materials[i] = new Stable(filePath); }
+            else if (type.contentEquals("burnable")) { materials[i] = new Burnable(filePath); }
+            else if (type.contentEquals("meltable")) { materials[i] = new Meltable(filePath); }
+            else { p.println("Did not recognize material type:" + type); }
         }
 
     }

@@ -6,18 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c48341b6-e978-41f8-8902-3dceb19bef49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/level1b/fire_position.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/level1b/material00_visual.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/level1b/material01_burnable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/level1b/material02_meltable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/level1b/material03_stable.png" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Burnable.java" afterPath="$PROJECT_DIR$/src/Burnable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level.java" afterPath="$PROJECT_DIR$/src/Level.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Material.java" afterPath="$PROJECT_DIR$/src/Material.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Meltable.java" afterPath="$PROJECT_DIR$/src/Meltable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Stable.java" afterPath="$PROJECT_DIR$/src/Stable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visual.java" afterPath="$PROJECT_DIR$/src/Visual.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Fire Game.iws" />
@@ -27,11 +17,11 @@
     <file path="/Material.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359541410138" ignored="false" />
     <file path="/Fire.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359305007515" ignored="false" />
     <file path="/Wood.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359541664828" ignored="false" />
-    <file path="/Main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359539233095" ignored="false" />
+    <file path="/Main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359547421279" ignored="false" />
     <file path="/fragment.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359195906238" ignored="false" />
     <file path="/Ice.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359324592175" ignored="false" />
     <file path="/Background.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359541703593" ignored="false" />
-    <file path="/Level.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359546726809" ignored="false" />
+    <file path="/Level.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359547862765" ignored="false" />
     <file path="/Stone.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359308655356" ignored="false" />
     <file path="/Helpers.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456513934" ignored="false" />
     <file path="/TApplet.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359477707095" ignored="false" />
@@ -98,7 +88,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
+            <state line="25" column="5" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -106,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Material.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Material.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Material.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="32" selection-start="669" selection-end="669" vertical-scroll-proportion="0.5319149">
+            <state line="30" column="32" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -170,10 +160,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Level.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="2183" selection-end="2183" vertical-scroll-proportion="0.0">
+            <state line="49" column="92" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.38652483">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -599,27 +589,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Meltable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Burnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="5" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -663,9 +635,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="28" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
+        <state line="25" column="5" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Meltable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="5" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="32" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -674,21 +673,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Level.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2183" selection-end="2183" vertical-scroll-proportion="0.0">
+        <state line="49" column="92" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.38652483">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#1064#1238#0" expanded="true" />
             <element signature="e#1227#1228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Material.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="32" selection-start="669" selection-end="669" vertical-scroll-proportion="0.5319149">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

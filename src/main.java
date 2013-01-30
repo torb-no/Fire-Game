@@ -13,9 +13,11 @@ public class Main extends TApplet {
     Level level;
 
     public void setup() {
+        noLoop(); // Half the loop ’til we are ready
         smooth();
         noStroke();
         level = new Level(this, "level1b");
+        loop();
     }
 
     public void draw() {
