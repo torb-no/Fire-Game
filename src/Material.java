@@ -15,23 +15,25 @@ public class Material {
     public static Fire fire;
 
     //PImage materialMap;
-    PGraphics materialBuffer;
+    PImage materialImage;
+    PGraphics materialMask;
     public boolean flammable = false;
+    public String material;
 
     public void iterate() {
         // overload with appropriate if material should react to flame
     }
 
     public void draw() {
-        p.image(materialBuffer, 0, 0);
+        materialImage.mask(materialMask);
+        p.image(materialImage, 0, 0);
     }
 
     void loadMap(String material) {
-        PImage materialMap = p.loadImage(level.name + "/" + material + ".png");
-        materialBuffer = p.createGraphics(materialMap.width, materialMap.height, p.JAVA2D);
-        materialBuffer.beginDraw();
-        materialBuffer.image(materialMap, 0, 0);
-        materialBuffer.endDraw();
+        this.material = material;
+        materialImage = p.loadImage(level.name + "/" + material + ".png");
+        materialMask = p.createGraphics(materialImage.width, materialImage.height, p.P2D);
+        p.setImageBasedOnAlpha(materialMask, materialImage);
     }
 
     public boolean materialExistsAtPosition(PVector position) {
@@ -39,8 +41,7 @@ public class Material {
     }
 
     public boolean materialExistsAtPosition(int x, int y) {
-        int pixel = materialBuffer.get(x, y);
-        return p.alpha(pixel) != 0.0;
+        return materialMask.get(x, y) == -1;
     }
 
     public boolean materialExistsAtPosition(float x, float y) {

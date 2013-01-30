@@ -5,24 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c48341b6-e978-41f8-8902-3dceb19bef49" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Background.java" afterPath="$PROJECT_DIR$/src/Background.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Material.java" afterPath="$PROJECT_DIR$/src/Material.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TApplet.java" afterPath="$PROJECT_DIR$/src/TApplet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wood.java" afterPath="$PROJECT_DIR$/src/Wood.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Fire Game.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359204139794" ignored="false" />
     <file path="/main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359151376334" ignored="false" />
-    <file path="/Material.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456704861" ignored="false" />
+    <file path="/Material.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359539148284" ignored="false" />
     <file path="/Fire.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359305007515" ignored="false" />
-    <file path="/Wood.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359472595824" ignored="false" />
-    <file path="/Main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456662964" ignored="false" />
+    <file path="/Wood.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359537446403" ignored="false" />
+    <file path="/Main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359539233095" ignored="false" />
     <file path="/fragment.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359195906238" ignored="false" />
     <file path="/Ice.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359324592175" ignored="false" />
-    <file path="/Background.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359452382133" ignored="false" />
+    <file path="/Background.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359538415234" ignored="false" />
     <file path="/Level.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456943082" ignored="false" />
     <file path="/Stone.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359308655356" ignored="false" />
     <file path="/Helpers.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456513934" ignored="false" />
-    <file path="/TApplet.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359474698417" ignored="false" />
+    <file path="/TApplet.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359477707095" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +87,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+            <state line="25" column="22" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -92,32 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fire.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Fire.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="28" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Level.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Level.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="30" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Material.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Material.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Material.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="25" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+            <state line="43" column="39" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.75124377">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -128,7 +109,7 @@
       <file leaf-file-name="Background.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Background.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="5" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
+            <state line="11" column="49" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,7 +118,7 @@
       <file leaf-file-name="Wood.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wood.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="16" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0">
+            <state line="21" column="5" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -145,10 +126,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TApplet.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TApplet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TApplet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="33" selection-start="792" selection-end="792" vertical-scroll-proportion="0.52238804">
+            <state line="15" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -178,6 +159,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="PConstants.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Applications/Processing.app/Contents/Resources/Java/core.jar!/processing/core/PConstants.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="21" selection-start="925" selection-end="925" vertical-scroll-proportion="-0.6">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -201,13 +191,13 @@
         <option value="$PROJECT_DIR$/src/Stone.java" />
         <option value="$PROJECT_DIR$/src/Ice.java" />
         <option value="$PROJECT_DIR$/src/Fire.java" />
-        <option value="$PROJECT_DIR$/src/Background.java" />
         <option value="$PROJECT_DIR$/src/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/Level.java" />
+        <option value="$PROJECT_DIR$/src/TApplet.java" />
+        <option value="$PROJECT_DIR$/src/Wood.java" />
+        <option value="$PROJECT_DIR$/src/Background.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Material.java" />
-        <option value="$PROJECT_DIR$/src/Level.java" />
-        <option value="$PROJECT_DIR$/src/Wood.java" />
-        <option value="$PROJECT_DIR$/src/TApplet.java" />
       </list>
     </option>
   </component>
@@ -541,22 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Background.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Applications/Processing.app/Contents/Resources/Java/core.jar!/processing/core/PApplet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1494" column="0" selection-start="61380" selection-end="61380" vertical-scroll-proportion="-19.4">
@@ -573,6 +547,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="28" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="21" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
@@ -582,18 +565,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/TApplet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+        <state line="15" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Material.java">
+    <entry file="file://$PROJECT_DIR$/src/Background.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="25" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+        <state line="11" column="49" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Applications/Processing.app/Contents/Resources/Java/core.jar!/processing/core/PConstants.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="21" selection-start="925" selection-end="925" vertical-scroll-proportion="-0.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wood.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="5" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -609,18 +606,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wood.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="16" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0">
+        <state line="25" column="22" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TApplet.java">
+    <entry file="file://$PROJECT_DIR$/src/Material.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="33" selection-start="792" selection-end="792" vertical-scroll-proportion="0.52238804">
+        <state line="43" column="39" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.75124377">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

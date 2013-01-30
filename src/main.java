@@ -23,4 +23,11 @@ public class Main extends TApplet {
         level.draw();
     }
 
+    public void mousePressed() {
+        for (int i=0; i<level.materials.length; i++) {
+            String s = level.materials[i].material + ": " + level.materials[i].materialMask.get(mouseX, mouseY);
+            println(s);
+        }
+    }
+
 }

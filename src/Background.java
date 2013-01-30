@@ -9,7 +9,7 @@ public class Background extends Material {
 
     Background() {
         loadMap("background");
-        p.size(materialBuffer.width, materialBuffer.height);
+        p.size(materialImage.width, materialImage.height);
     }
 
 }

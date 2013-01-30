@@ -33,12 +33,9 @@ public class TApplet extends PApplet {
         for (int i=0; i<target.pixels.length; i++) {
             float r = red(target.pixels[i]),
                   g = green(target.pixels[i]),
-                  b = blue(target.pixels[i]);
-            float ar = red(imageSource.pixels[i]),
-                  ag = green(imageSource.pixels[i]),
-                  ab = blue(imageSource.pixels[i]);
-            float a = (ar + ag + ab) / 3;
-            target.pixels[i] = color(r, g, b, imageSource.pixels[i]);
+                  b = blue(target.pixels[i]),
+                  a = brightness(imageSource.pixels[i]);
+            target.pixels[i] = color(r, g, b, a);
         }
 
         target.updatePixels();

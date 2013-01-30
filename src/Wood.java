@@ -15,17 +15,9 @@ public class Wood extends Material {
     Wood() {
         loadMap("wood");
         flammable = true;
-        gMask = p.createGraphics(p.width, p.height, p.JAVA2D);
-        p.setImageBasedOnAlpha(gMask, materialBuffer);
     }
 
     public void iterate() {
-
-    }
-
-    public void draw() {
-        p.image(materialBuffer, 0, 0);
-        p.image(gMask, 0, 0);
 
     }
 
@@ -42,6 +34,7 @@ public class Wood extends Material {
         if (level.positionIsFlammable(fire.pos.x, y))
             fire.pos.y = y;
 
+        /*
         // burn between previous pos and current pos
         if (fire.pos.x != prevFirePos.x || fire.pos.y != prevFirePos.y) {
             gMask.beginDraw();
@@ -50,7 +43,7 @@ public class Wood extends Material {
             gMask.endDraw();
         }
 
-        p.setAlphaBasedOnImage(materialBuffer, gMask);
+        p.setAlphaBasedOnImage(materialBuffer, gMask);*/
 
         return false;
     }
