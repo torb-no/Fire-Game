@@ -19,6 +19,7 @@ public class Main extends TApplet {
     }
 
     public void setup() {
+        println();
         noLoop(); // Half the loop ’til we are ready
         smooth();
         noStroke();
@@ -30,13 +31,6 @@ public class Main extends TApplet {
     public void draw() {
         level.iterate();
         level.draw();
-    }
-
-    public void mousePressed() {
-        for (int i=0; i<level.materials.length; i++) {
-            String s = level.materials[i].material + ": " + level.materials[i].materialMask.get(mouseX, mouseY);
-            println(s);
-        }
     }
 
 }
