@@ -1,11 +1,3 @@
-/**
- * Created with IntelliJ IDEA.
- * User: torbjorn
- * Date: 27.01.13
- * Time: 17:29
- * To change this template use File | Settings | File Templates.
- */
-
 import processing.core.*;
 import java.io.*;
 
@@ -87,8 +79,7 @@ public class Level {
 
     boolean positionIsFlammable(float x, float y) {
         for (int i=materials.length-1; i!=0; i--) {
-            if (materials[i].materialExistsAtPosition(x, y))
-                return materials[i].flammable;
+            if (materials[i].materialExistsAtPosition(x, y)) return materials[i].flammable;
         }
         return false;
     }

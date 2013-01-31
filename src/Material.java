@@ -1,11 +1,3 @@
-/**
- * Created with IntelliJ IDEA.
- * User: torbjorn
- * Date: 25.01.13
- * Time: 21:43
- * To change this template use File | Settings | File Templates.
- */
-
 import processing.core.*;
 
 public class Material {
@@ -18,7 +10,6 @@ public class Material {
     PImage materialImage;
     PGraphics materialMask;
     public boolean flammable = false;
-    public String material;
 
     public void iterate() {
         // overload with appropriate if material should react to flame
@@ -30,7 +21,6 @@ public class Material {
     }
 
     void loadMap(String filename) {
-        this.material = filename;
         materialImage = p.loadImage(filename);
         materialMask = p.createGraphics(materialImage.width, materialImage.height, p.P2D);
         p.setImageBasedOnAlpha(materialMask, materialImage);

@@ -1,11 +1,3 @@
-/**
- * Created with IntelliJ IDEA.
- * User: torbjorn
- * Date: 31.01.13
- * Time: 09:14
- * To change this template use File | Settings | File Templates.
- */
-
 import processing.core.*;
 import procontroll.*;
 
@@ -16,10 +8,8 @@ public class GameInput {
     ControllDevice xboxController;
     ControllButton xboxLeft, xboxRight;
 
-
     GameInput(PApplet parent) {
         p = parent;
-
         controllIO = ControllIO.getInstance(p);
 
         for (int i=0; i<controllIO.getNumberOfDevices(); i++) {
@@ -29,7 +19,6 @@ public class GameInput {
                 xboxRight = xboxController.getButton(3);
             }
         }
-
     }
 
     public boolean moveLeft() {
