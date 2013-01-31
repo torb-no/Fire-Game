@@ -22,10 +22,8 @@ public class Burnable extends Material {
     public boolean fireIteration() {
         PVector prevFirePos = new PVector(fire.pos.x, fire.pos.y);
 
-        if (p.keyPressed) {
-            if      (p.keyCode == p.LEFT) moveFireX(-1);
-            else if (p.keyCode == p.RIGHT) moveFireX(1);
-        }
+        if (gameInput.moveLeft()) moveFireX(-1);
+        else if (gameInput.moveRight()) moveFireX(1);
 
         // move up on burning material
         float y = fire.pos.y - 1;

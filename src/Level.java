@@ -15,10 +15,12 @@ public class Level {
     Material[] materials;
     Fire fire;
     String name;
+    GameInput gameInput;
 
-    Level(TApplet parent, String name) {
+    Level(TApplet parent, String name, GameInput gameInput) {
         p = parent;
         this.name = name;
+        this.gameInput = gameInput;
 
         PImage fireImage = p.loadImage(p.sketchPath + "/levels/" + name + "/fire_position.png");
         PVector firePosition = new PVector(0, 0);
@@ -33,6 +35,7 @@ public class Level {
         Material.p = p;
         Material.level = this;
         Material.fire = fire;
+        Material.gameInput = gameInput;
 
         // Load materials
         String levelPath = p.sketchPath + "/levels/" + name;

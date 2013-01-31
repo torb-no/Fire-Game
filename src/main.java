@@ -8,9 +8,11 @@
 
 import processing.core.*;
 
+
 public class Main extends TApplet {
 
     Level level;
+    GameInput gameInput;
 
     public static void main(String args[]) {
         PApplet.main(new String[] { "--present", "Main" });
@@ -20,7 +22,8 @@ public class Main extends TApplet {
         noLoop(); // Half the loop ’til we are ready
         smooth();
         noStroke();
-        level = new Level(this, "level1b");
+        gameInput = new GameInput(this);
+        level = new Level(this, "level1b", gameInput);
         loop();
     }
 

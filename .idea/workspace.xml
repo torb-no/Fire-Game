@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Level.java" line="86" mnemonic="8" />
-    <bookmark url="file://$PROJECT_DIR$/src/Level.java" line="38" mnemonic="6" />
+    <bookmark url="file://$PROJECT_DIR$/src/Level.java" line="89" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/src/Level.java" line="41" mnemonic="6" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c48341b6-e978-41f8-8902-3dceb19bef49" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/level1/background.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/level1/fire_position.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/level1/ice.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/level1/stone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/level1/wood.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/level1b/fire_position.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/level1b/material00_visual.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/level1b/material01_burnable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/level1b/material02_meltable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/level1b/material03_stable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/test/background.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/test/fire_position.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/test/ice.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/test/stone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/test/wood.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GameInput.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Burnable.java" afterPath="$PROJECT_DIR$/src/Burnable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire Game.iml" afterPath="$PROJECT_DIR$/Fire Game.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level.java" afterPath="$PROJECT_DIR$/src/Level.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Material.java" afterPath="$PROJECT_DIR$/src/Material.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Fire Game.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359204139794" ignored="false" />
     <file path="/main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359151376334" ignored="false" />
-    <file path="/Material.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359541410138" ignored="false" />
+    <file path="/Material.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359620325350" ignored="false" />
     <file path="/Fire.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359305007515" ignored="false" />
     <file path="/Wood.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359541664828" ignored="false" />
-    <file path="/Main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359547421279" ignored="false" />
+    <file path="/Main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359620491017" ignored="false" />
     <file path="/fragment.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359553362546" ignored="false" />
     <file path="/Ice.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359324592175" ignored="false" />
     <file path="/Background.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359541703593" ignored="false" />
-    <file path="/Level.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359577006709" ignored="false" />
+    <file path="/Level.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359620386616" ignored="false" />
     <file path="/Stone.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359308655356" ignored="false" />
     <file path="/Helpers.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359456513934" ignored="false" />
     <file path="/TApplet.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359477707095" ignored="false" />
     <file path="/Meltable.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359541612281" ignored="false" />
     <file path="/Stable.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359541632298" ignored="false" />
+    <file path="$USER_HOME$/Dropbox/Skule/4. semester/Game design/XboxControllerTest/src/Main.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359617671030" ignored="false" />
+    <file path="/GameInput.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359620346683" ignored="false" />
+    <file path="/Burnable.java" changelist="c48341b6-e978-41f8-8902-3dceb19bef49" time="1359620440934" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,10 +92,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+            <state line="25" column="40" selection-start="574" selection-end="574" vertical-scroll-proportion="0.6648936">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameInput.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GameInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="10" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Level.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Level.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="39" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -112,7 +128,7 @@
       <file leaf-file-name="Material.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Material.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="32" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
+            <state line="15" column="38" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -132,7 +148,7 @@
       <file leaf-file-name="Burnable.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Burnable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="5" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
+            <state line="26" column="0" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -173,20 +189,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Level.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="11" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.65425533">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#1115#1289#0" expanded="true" />
-                <element signature="e#1278#1279#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Stable.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stable.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -216,7 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Flammable.java" />
         <option value="$PROJECT_DIR$/src/Stone.java" />
         <option value="$PROJECT_DIR$/src/Fire.java" />
         <option value="$PROJECT_DIR$/src/Helpers.java" />
@@ -226,14 +227,18 @@
         <option value="$PROJECT_DIR$/src/Ice.java" />
         <option value="$PROJECT_DIR$/src/TApplet.java" />
         <option value="$PROJECT_DIR$/src/Meltable.java" />
-        <option value="$PROJECT_DIR$/src/Material.java" />
         <option value="$PROJECT_DIR$/src/Stable.java" />
-        <option value="$PROJECT_DIR$/src/Burnable.java" />
         <option value="$PROJECT_DIR$/src/Visual.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Material.java" />
+        <option value="$PROJECT_DIR$/src/GameInput.java" />
         <option value="$PROJECT_DIR$/src/Level.java" />
+        <option value="$PROJECT_DIR$/src/Burnable.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
@@ -311,12 +316,13 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="editor.preferences.tabs" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/procontroll/library" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -509,7 +515,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.1891892" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.7619048" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.7619048" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23809524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -601,15 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Burnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="5" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Visual.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="24" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
@@ -660,18 +657,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Material.java">
+    <entry file="file://$PROJECT_DIR$/src/Burnable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="32" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
+        <state line="26" column="0" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/GameInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+        <state line="18" column="10" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -680,12 +677,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Level.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="11" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.65425533">
+        <state line="37" column="39" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1115#1289#0" expanded="true" />
-            <element signature="e#1278#1279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="38" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="40" selection-start="574" selection-end="574" vertical-scroll-proportion="0.6648936">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -719,7 +731,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>core</last-edited>
+          <last-edited>procontroll</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

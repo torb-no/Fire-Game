@@ -13,6 +13,7 @@ public class Material {
     public static TApplet p;
     public static Level level;
     public static Fire fire;
+    public static GameInput gameInput;
 
     PImage materialImage;
     PGraphics materialMask;

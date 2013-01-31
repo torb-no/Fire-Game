@@ -8,6 +8,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="core" level="application" />
+    <orderEntry type="library" name="library" level="application" />
+    <orderEntry type="library" name="procontroll" level="application" />
   </component>
 </module>
 
