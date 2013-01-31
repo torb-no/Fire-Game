@@ -13,7 +13,8 @@ public class GameInput {
         controllIO = ControllIO.getInstance(p);
 
         for (int i=0; i<controllIO.getNumberOfDevices(); i++) {
-            if (controllIO.getDevice(i).getName().contentEquals("Controller")) { //Assume Xbox360-controller
+            //Assume Xbox360-controller, only tested on OSX with this driver: http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver
+            if (controllIO.getDevice(i).getName().contentEquals("Controller")) {
                 xboxController = controllIO.getDevice(i);
                 xboxLeft = xboxController.getButton(2);
                 xboxRight = xboxController.getButton(3);
