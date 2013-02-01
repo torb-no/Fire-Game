@@ -19,10 +19,13 @@ public class Level {
         for (int x=0; x<fireImage.width; x++) {
             for (int y=0; y<fireImage.height; y++) {
                 int c = fireImage.get(x, y);
-                if (p.alpha(c) == 255 & p.brightness(c) == 255) firePosition = new PVector(x, y);
+                if (p.alpha(c) == 255 & p.brightness(c) == 255)
+                    firePosition = new PVector(x, y);
             }
         }
         fire = new Fire(p, firePosition);
+
+        p.size(fireImage.width, fireImage.height);
 
         Material.p = p;
         Material.level = this;
@@ -32,7 +35,6 @@ public class Level {
         // Load materials
         String levelPath = p.sketchPath + File.separator + "levels" + File.separator + name;
         File levelFolder = new File(levelPath);
-
         String[] materialFiles = levelFolder.list(new FilenameFilter() {
             @Override
             public boolean accept(File file, String s) {
@@ -47,8 +49,8 @@ public class Level {
             if      (type.contentEquals("visual"))   materials[i] = new Visual(filePath);
             else if (type.contentEquals("stable"))   materials[i] = new Stable(filePath);
             else if (type.contentEquals("burnable")) materials[i] = new Burnable(filePath);
-            else if (type.contentEquals("meltable")) materials[i] = new Meltable(filePath);
-            else p.println("Error: unrecognized material type '" + type + "'");
+            else if (type.contentEquals("vaporizable")) materials[i] = new Vaporizable(filePath);
+            else throw new UnrecognizedMaterialException(type);
         }
 
     }
@@ -79,9 +81,18 @@ public class Level {
 
     boolean positionIsFlammable(float x, float y) {
         for (int i=materials.length-1; i!=0; i--) {
-            if (materials[i].materialExistsAtPosition(x, y)) return materials[i].flammable;
+            if (materials[i].canAffectFire && materials[i].materialExistsAtPosition(x, y))
+                return materials[i].flammable;
         }
         return false;
+    }
+
+    class UnrecognizedMaterialException extends RuntimeException {
+
+        UnrecognizedMaterialException(String type) {
+            super("Unrecognized material type: '" + type + "'");
+        }
+
     }
 
 }

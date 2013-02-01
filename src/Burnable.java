@@ -7,10 +7,6 @@ public class Burnable extends Material {
         flammable = true;
     }
 
-    public void iterate() {
-
-    }
-
     public boolean fireIteration() {
         PVector prevFirePos = new PVector(fire.pos.x, fire.pos.y);
 
@@ -33,20 +29,29 @@ public class Burnable extends Material {
         return false;
     }
 
-   void moveFireX(int xOffset) {
-      int x = (int) fire.pos.x + xOffset;
-      for (int yOffset=0; yOffset<5; yOffset++) {
-        int y = (int) fire.pos.y + yOffset;
-        if (level.positionIsFlammable(x, y)) {
-            fire.pos.x = x;
-            fire.pos.y = y;
-            break;
+    void moveFireX(int xOffset) {
+        int x = (int) fire.pos.x + xOffset;
+        int limit = 5;
+
+        // Check above
+        for (int yOffset=0; yOffset>-limit; yOffset--) {
+            int y = (int) fire.pos.y + yOffset;
+            if (level.positionIsFlammable(x, y)) {
+                fire.pos.x = x;
+                fire.pos.y = y;
+                return;
+            }
         }
-      }
-   }
 
-    void burnAway(int x, int y) {
-
+        // Check bellow
+        for (int yOffset=0; yOffset<limit; yOffset++) {
+            int y = (int) fire.pos.y + yOffset;
+            if (level.positionIsFlammable(x, y)) {
+                fire.pos.x = x;
+                fire.pos.y = y;
+                return;
+            }
+        }
     }
 
 }

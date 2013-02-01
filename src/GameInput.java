@@ -10,16 +10,20 @@ public class GameInput {
 
     GameInput(PApplet parent) {
         p = parent;
+
         controllIO = ControllIO.getInstance(p);
 
         for (int i=0; i<controllIO.getNumberOfDevices(); i++) {
-            //Assume Xbox360-controller, only tested on OSX with this driver: http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver
+            // Assume Xbox360-controller, only tested on OSX with this driver: http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver
             if (controllIO.getDevice(i).getName().contentEquals("Controller")) {
                 xboxController = controllIO.getDevice(i);
                 xboxLeft = xboxController.getButton(2);
                 xboxRight = xboxController.getButton(3);
             }
         }
+
+        // */
+
     }
 
     public boolean moveLeft() {
@@ -31,12 +35,5 @@ public class GameInput {
         return p.keyPressed && p.keyCode == p.RIGHT ||
                xboxRight != null && xboxRight.pressed();
     }
-
-    public void iterate() {
-
-    }
-
-
-
 
 }

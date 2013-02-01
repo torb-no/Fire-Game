@@ -9,10 +9,11 @@ public class Material {
 
     PImage materialImage;
     PGraphics materialMask;
+    public boolean canAffectFire = true;
     public boolean flammable = false;
 
     public void iterate() {
-        // overload with appropriate if material should react to flame
+        // overload if material should react to flame
     }
 
     public void draw() {
@@ -40,8 +41,8 @@ public class Material {
 
     public boolean fireIteration() {
         return true;
-        // Return false in order to prevent next material from affecting the flame
-        // Only fires if flame is actually on the material
+        // Overload to change how fire behaves when on this material
+        // Return true to prevent material underneath at same position from affecting the flame
     }
 
 

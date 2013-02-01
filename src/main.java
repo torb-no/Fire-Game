@@ -10,12 +10,14 @@ public class Main extends TApplet {
     }
 
     public void setup() {
-        noLoop(); // Half the loop ’til we are ready
+        noLoop(); // Halt the loop ’til we are ready
+
         smooth();
         noStroke();
         gameInput = new GameInput(this);
-        level = new Level(this, "level1b", gameInput);
-        loop();
+        level = new Level(this, "Test2", gameInput);
+
+        loop(); // Stuff is loaded, let’s get going!
     }
 
     public void draw() {
