@@ -14,3 +14,23 @@ out/
 *.class
 
 *.class
+
+out/production/Fire Game/Burnable.class
+
+out/production/Fire Game/Fire.class
+
+out/production/Fire Game/GameInput.class
+
+out/production/Fire Game/Level$1.class
+
+out/production/Fire Game/Level.class
+
+out/production/Fire Game/Main.class
+
+out/production/Fire Game/Material.class
+
+out/production/Fire Game/Stable.class
+
+out/production/Fire Game/TApplet.class
+
+out/production/Fire Game/Visual.class
