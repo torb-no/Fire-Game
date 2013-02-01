@@ -16,6 +16,7 @@ public class Main extends TApplet {
         noStroke();
         gameInput = new GameInput(this);
         level = new Level(this, "Test2", gameInput);
+        Soundtrack.play(this);
 
         loop(); // Stuff is loaded, let’s get going!
     }
