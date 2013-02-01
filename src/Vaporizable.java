@@ -5,6 +5,7 @@ public class Vaporizable extends Material {
     }
 
     public void iterate() {
+        // Melt away gradually
         materialMask.beginDraw();
         materialMask.fill(0, 1);
         materialMask.noStroke();

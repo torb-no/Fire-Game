@@ -31,10 +31,10 @@ public class Burnable extends Material {
 
     void moveFireX(int xOffset) {
         int x = (int) fire.pos.x + xOffset;
-        int limit = 5;
+        int yLimit = 5;
 
         // Check above
-        for (int yOffset=0; yOffset>-limit; yOffset--) {
+        for (int yOffset=0; yOffset>-yLimit; yOffset--) {
             int y = (int) fire.pos.y + yOffset;
             if (level.positionIsFlammable(x, y)) {
                 fire.pos.x = x;
@@ -44,7 +44,7 @@ public class Burnable extends Material {
         }
 
         // Check bellow
-        for (int yOffset=0; yOffset<limit; yOffset++) {
+        for (int yOffset=0; yOffset<yLimit; yOffset++) {
             int y = (int) fire.pos.y + yOffset;
             if (level.positionIsFlammable(x, y)) {
                 fire.pos.x = x;
