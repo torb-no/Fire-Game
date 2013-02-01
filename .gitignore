@@ -10,3 +10,5 @@ workspace.xml
 .idea/workspace.xml
 out/
 *.class
+
+*.class
