@@ -14,7 +14,7 @@ public class Level {
         this.name = name;
         this.gameInput = gameInput;
 
-        PImage fireImage = p.loadImage(p.sketchPath + File.separator + "levels" + File.separator + name + File.separator + "fire_position.png");
+        PImage fireImage = p.loadImage(p.assetPath("levels/" + name + "/fire_position.png"));
         PVector firePosition = new PVector(0, 0);
         for (int x=0; x<fireImage.width; x++) {
             for (int y=0; y<fireImage.height; y++) {
@@ -33,7 +33,7 @@ public class Level {
         Material.gameInput = gameInput;
 
         // Load materials
-        String levelPath = p.sketchPath + File.separator + "levels" + File.separator + name;
+        String levelPath = p.assetPath("levels/" + name);
         File levelFolder = new File(levelPath);
         String[] materialFiles = levelFolder.list(new FilenameFilter() {
             @Override
@@ -45,7 +45,7 @@ public class Level {
         materials = new Material[materialFiles.length];
         for (int i=0; i<materialFiles.length; i++) {
             String type = materialFiles[i].substring(11).replace(".png", ""),
-                   filePath = p.sketchPath + File.separator + "levels" + File.separator + name + File.separator + materialFiles[i];
+                   filePath = p.assetPath("levels/" + name + "/" + materialFiles[i]);
             if      (type.contentEquals("visual"))   materials[i] = new Visual(filePath);
             else if (type.contentEquals("stable"))   materials[i] = new Stable(filePath);
             else if (type.contentEquals("burnable")) materials[i] = new Burnable(filePath);

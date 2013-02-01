@@ -1,5 +1,7 @@
 import processing.core.*;
 
+import java.io.File;
+
 public class TApplet extends PApplet {
 
     // Extend PApplet with missing functionality
@@ -14,6 +16,11 @@ public class TApplet extends PApplet {
         }
 
         target.updatePixels();
+    }
+
+    public String assetPath(String where) {
+        String s = where.replace("/", File.separator);
+        return sketchPath + File.separator + "assets" + File.separator + s;
     }
 
 }
