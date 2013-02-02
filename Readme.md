@@ -2,7 +2,8 @@
 
 ## Instructions for OS X
 
-### 1. Open the project using [IntelliJ](http://www.jetbrains.com/idea/download/) (install it if you don’t have it)
+### 1. Open the project using [IntelliJ](http://www.jetbrains.com/idea/download/)
+- Install it if you don’t have it
 
 ### 2. Add processing to the project module from global libraries
 - Install [Processing](http://processing.org) if you don’t have it.
