@@ -17,7 +17,7 @@
 - Right click ‘minim’ -> Add to module -> Select Fire Game -> Ok.
 
 ### 4. Download jinput and put them in the Java Native Library Path.
-- Download the latest version of [jinput]([jinput](http://www.newdawnsoftware.com/resources/jinput/).
+- Download the latest version of [jinput](http://www.newdawnsoftware.com/resources/jinput/).
 - Open /usr/lib/java and copy libjinput-osx.jnilib to that directory.
 
 ### 5. Connect a wired Xbox360 gamepad if you have one. 
