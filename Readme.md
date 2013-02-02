@@ -7,7 +7,10 @@
 		- Go to File -> Project Structure -> Global Libraries
 		- If ‘core’ library from processing is not in the list you need to add it. Pluss icon -> Java. Browse to /Applications/Processing.app/Contents/Resources/Java/core.jar.
 		- Right click ‘core’ -> Add to modules -> Select Fire game -> Ok.
-3. Add minim libraries (located in Processing). TODO: FINISH THIS.
+3. Add minim libraries to the project module from global libraries.
+		- Go to File -> Project Structure -> Global Libraries
+		- If minim libraries is not in the list you need to add it (it is one entry that includes many classes). Plus icon -> Java. Browse to /Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/minim/library/ and select all the *.jar files in that directory. Click ok.
+		- Right click ‘minim’ -> Add to module -> Select Fire Game -> Ok.
 4. Download jinput and put them in the Java Native Library Path.
 		- Download the latest version of [jinput]([jinput](http://www.newdawnsoftware.com/resources/jinput/)
 		- Open /usr/lib/java
