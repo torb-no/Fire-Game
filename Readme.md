@@ -15,5 +15,5 @@
 		- Download the latest version of [jinput]([jinput](http://www.newdawnsoftware.com/resources/jinput/)
 		- Open /usr/lib/java
 		- Copy the 
-5. Connect a wired Xbox360 gamepad if you have one
+5. Connect a wired Xbox360 gamepad if you have one. (Requires [drivers](http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver) to work
 6. Hit play!
