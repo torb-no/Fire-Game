@@ -25,7 +25,7 @@ public class Level {
         }
         fire = new Fire(p, firePosition);
 
-        p.size(fireImage.width, fireImage.height);
+        p.size(fireImage.width, fireImage.height, p.P2D);
 
         Material.p = p;
         Material.level = this;

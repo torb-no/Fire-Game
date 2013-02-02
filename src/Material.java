@@ -23,7 +23,7 @@ public class Material {
 
     void loadMap(String filename) {
         materialImage = p.loadImage(filename);
-        materialMask = p.createGraphics(materialImage.width, materialImage.height);
+        materialMask = p.createGraphics(materialImage.width, materialImage.height, p.P2D);
         p.setImageBasedOnAlpha(materialMask, materialImage);
     }
 
