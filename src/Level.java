@@ -68,7 +68,7 @@ public class Level {
         boolean doFireIteration = true;
         for (int i=materials.length-1; i!=0; i--) { // In reverse because top most materials take precedence
             materials[i].iterate();
-            if (doFireIteration && materials[i].materialExistsAtPosition(fire.pos))
+            if (doFireIteration && materials[i].materialExistsWithinArea(fire.pos, fire.hitBox))
                 doFireIteration = materials[i].fireIteration();
         }
     }
@@ -87,19 +87,12 @@ public class Level {
         return false;
     }
 
-    PVector flammablePositionWithinArea(float posX, float posY, float size) {
-        float s2 = size / 2,
-              sx = posX - s2, // start x/y
-              sy = posY - s2,
-              ex = posX + s2, // end x/y
-              ey = posY + s2;
-        for (float x=sx; x<ex; x++) {
-            for (float y=sy; y<ey; y++) {
-                if (positionIsFlammable(x, y))
-                    return new PVector(x, y);
-            }
+    boolean areaIsFlammable(float x, float y, float size) {
+        for (int i=materials.length-1; i!=0; i--) {
+            if (materials[i].canAffectFire && materials[i].materialExistsWithinArea(x, y, size))
+                return materials[i].flammable;
         }
-        return null;
+        return false;
     }
 
     class UnrecognizedMaterialException extends RuntimeException {
