@@ -39,6 +39,23 @@ public class Material {
         return materialExistsAtPosition((int)x, (int)y);
     }
 
+    public boolean materialExistsWithinArea(float posX, float posY, float size) {
+        float s2 = size / 2,
+              sx = posX - s2, sy = posY - s2, // left top corner
+              ex = posX + s2, ey = posY + s2; // right bottom corner
+        for (float x=sx; x<ex; x++) {
+            for (float y=sy; y<ey; y++) {
+                if (materialExistsAtPosition(x, y))
+                    return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean materialExistsWithinArea(PVector pos, float size) {
+        return materialExistsWithinArea(pos.x, pos.y, size);
+    }
+
     public boolean fireIteration() {
         return true;
         // Overload to change how fire behaves when on this material
