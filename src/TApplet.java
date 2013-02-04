@@ -1,5 +1,4 @@
 import processing.core.*;
-
 import java.io.File;
 
 public class TApplet extends PApplet {
@@ -19,8 +18,8 @@ public class TApplet extends PApplet {
     }
 
     public String assetPath(String where) {
-        String s = where.replace("/", File.separator);
-        return sketchPath + File.separator + "assets" + File.separator + s;
+        String s = sketchPath + "/assets/" + where;
+        return s.replace("/", File.separator);
     }
 
 }
