@@ -87,6 +87,21 @@ public class Level {
         return false;
     }
 
+    PVector flammablePositionWithinArea(float posX, float posY, float size) {
+        float s2 = size / 2,
+              sx = posX - s2, // start x/y
+              sy = posY - s2,
+              ex = posX + s2, // end x/y
+              ey = posY + s2;
+        for (float x=sx; x<ex; x++) {
+            for (float y=sy; y<ey; y++) {
+                if (positionIsFlammable(x, y))
+                    return new PVector(x, y);
+            }
+        }
+        return null;
+    }
+
     class UnrecognizedMaterialException extends RuntimeException {
 
         UnrecognizedMaterialException(String type) {

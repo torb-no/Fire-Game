@@ -1,5 +1,3 @@
-import processing.core.*;
-
 public class Main extends TApplet {
 
     Level level;
@@ -13,16 +11,16 @@ public class Main extends TApplet {
         gameInput = new GameInput(this);
         level = new Level(this, "Test4", gameInput);
         //Soundtrack.play(this);
+        debug = new Debug(this, level);
 
         loop(); // Stuff is loaded, let’s get going!
     }
 
     public void draw() {
         level.iterate();
+        if (debug != null) debug.iterate();
         level.draw();
-
-        if (keyPressed && keyCode == UP) println(debugString);
-        if (mousePressed) println("Mouse click at " + mouseX + ", " + mouseY);
+        if (debug != null) debug.draw();
     }
 
 }

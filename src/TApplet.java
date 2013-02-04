@@ -5,6 +5,8 @@ public class TApplet extends PApplet {
 
     // Extend PApplet with missing functionality
 
+    public static Debug debug;
+
     public void setImageBasedOnAlpha(PImage target, PImage alphaSource) {
         target.loadPixels();
         alphaSource.loadPixels();
@@ -21,7 +23,5 @@ public class TApplet extends PApplet {
         String s = sketchPath + "/assets/" + where;
         return s.replace("/", File.separator);
     }
-
-    public String debugString = "";
 
 }
