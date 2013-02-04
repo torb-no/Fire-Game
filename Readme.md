@@ -23,4 +23,16 @@
 ### 5. Connect a wired Xbox360 gamepad if you have one. 
 - Requires [drivers](http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver) to work.
 
+### 6. Set up Run configuration
+
+#### Windowed
+- Beside the Run -> Edit configurations -> Plus icon -> Application.
+- Give it a name like "Run"
+- Choose "Main" in main Class.
+- Write "Main" in program arguments
+
+#### Full screen
+- Same as above, but…
+- Write "--present Main" in program arguments
+
 ### 6. Hit play!

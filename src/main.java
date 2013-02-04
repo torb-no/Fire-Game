@@ -5,10 +5,6 @@ public class Main extends TApplet {
     Level level;
     GameInput gameInput;
 
-    public static void main(String args[]) {
-        PApplet.main(new String[] { "--present", "Main" });
-    }
-
     public void setup() {
         noLoop(); // Halt the loop ’til we are ready
 
