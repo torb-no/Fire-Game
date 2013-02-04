@@ -22,4 +22,6 @@ public class TApplet extends PApplet {
         return s.replace("/", File.separator);
     }
 
+    public String debugString = "";
+
 }

@@ -15,8 +15,8 @@ public class Main extends TApplet {
         smooth();
         noStroke();
         gameInput = new GameInput(this);
-        level = new Level(this, "Test2", gameInput);
-        Soundtrack.play(this);
+        level = new Level(this, "Test4", gameInput);
+        //Soundtrack.play(this);
 
         loop(); // Stuff is loaded, let’s get going!
     }
@@ -24,6 +24,9 @@ public class Main extends TApplet {
     public void draw() {
         level.iterate();
         level.draw();
+
+        if (keyPressed && keyCode == UP) println(debugString);
+        if (mousePressed) println("Mouse click at " + mouseX + ", " + mouseY);
     }
 
 }
