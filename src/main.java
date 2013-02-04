@@ -11,7 +11,8 @@ public class Main extends TApplet {
         gameInput = new GameInput(this);
         level = new Level(this, "Test4", gameInput);
         //Soundtrack.play(this);
-        debug = new Debug(this, level);
+        //debug = new Debug(this, level);
+        frame.setTitle("Fire Game");
 
         loop(); // Stuff is loaded, let’s get going!
     }
