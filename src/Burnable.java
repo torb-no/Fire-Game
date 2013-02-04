@@ -10,19 +10,8 @@ public class Burnable extends Material {
     public boolean fireIteration() {
         PVector prevFirePos = new PVector(fire.pos.x, fire.pos.y);
 
-        /* move up on burning material, burn down if at top
-        if (level.positionIsFlammable(fire.pos.x, fire.pos.y -1))
-             fire.pos.y--;
-        //else fire.pos.y++; // */
-
-
-        //if (level.positionIsFlammable(fire.pos.x, fire.pos.y -1)) fire.pos.y--;
-        PVector flammablePos = level.flammablePositionWithinArea(fire.pos.x, fire.pos.y-fire.hitBox/2, fire.hitBox);
-        if (flammablePos != null) {
-            if (p.debug != null) p.debug.lastFoundPosition = flammablePos;
+        if (level.areaIsFlammable(fire.pos.x, fire.pos.y, 4))
             fire.pos.y--;
-        }
-        //else fire.pos.y++; //*/
 
         if (gameInput.moveLeft()) moveFireX(-1);
         else if (gameInput.moveRight()) moveFireX(1);
