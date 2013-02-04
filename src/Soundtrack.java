@@ -1,10 +1,3 @@
-/**
- * Created with IntelliJ IDEA.
- * User: torbjorn
- * Date: 01.02.13
- * Time: 14:26
- * To change this template use File | Settings | File Templates.
- */
 import processing.core.*;
 import ddf.minim.*;
 
