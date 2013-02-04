@@ -15,10 +15,6 @@ public class Fire {
         p.noStroke();
         p.fill(200, 200, 0, 150);
         p.ellipse(pos.x, pos.y, 20, 20);
-
-        if (p.debug != null) {
-
-        }
     }
 
 
