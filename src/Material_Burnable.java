@@ -1,8 +1,12 @@
 import processing.core.*;
 
-public class Burnable extends Material {
+public class Material_Burnable extends Material {
 
-    Burnable(String filename) {
+    public float upSpeed = 1f,
+                 downSpeed = 0.5f;
+    public int sideSpeed = 1;
+
+    Material_Burnable(String filename) {
         loadMap(filename);
         flammable = true;
     }
@@ -10,13 +14,13 @@ public class Burnable extends Material {
     public boolean fireIteration() {
         PVector prevFirePos = new PVector(fire.pos.x, fire.pos.y);
 
-        if (level.positionIsFlammable(fire.pos.x, fire.pos.y-1))
-            fire.pos.y--;
-        else if (level.areaIsFlammable(fire.pos.x, fire.pos.y+1, 3, 1))
-            fire.pos.y += 0.5;
+        if (level.positionIsFlammable(fire.pos.x, fire.pos.y-upSpeed))
+            fire.pos.y -= upSpeed;
+        else if (level.areaIsFlammable(fire.pos.x, fire.pos.y+downSpeed, 3, 1))
+            fire.pos.y += downSpeed;
 
-        if (gameInput.moveLeft()) moveFireX(-1);
-        else if (gameInput.moveRight()) moveFireX(1);
+        if      (gameInput.moveLeft())  moveFireX(-sideSpeed);
+        else if (gameInput.moveRight()) moveFireX(sideSpeed);
 
         // burn between previous pos and current pos
         if (fire.pos.x != prevFirePos.x || fire.pos.y != prevFirePos.y) {

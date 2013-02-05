@@ -1,6 +1,6 @@
-public class Vaporizable extends Material {
+public class Material_Vaporizable extends Material {
 
-    Vaporizable(String filename) {
+    Material_Vaporizable(String filename) {
         loadMap(filename);
     }
 

@@ -46,10 +46,10 @@ public class Level {
         for (int i=0; i<materialFiles.length; i++) {
             String type = materialFiles[i].substring(11).replace(".png", ""),
                    filePath = p.assetPath("levels/" + name + "/" + materialFiles[i]);
-            if      (type.contentEquals("visual"))      materials[i] = new Visual(filePath);
-            else if (type.contentEquals("stable"))      materials[i] = new Stable(filePath);
-            else if (type.contentEquals("burnable"))    materials[i] = new Burnable(filePath);
-            else if (type.contentEquals("vaporizable")) materials[i] = new Vaporizable(filePath);
+            if      (type.contentEquals("visual"))      materials[i] = new Material_Visual(filePath);
+            else if (type.contentEquals("stable"))      materials[i] = new Material_Stable(filePath);
+            else if (type.contentEquals("burnable"))    materials[i] = new Material_Burnable(filePath);
+            else if (type.contentEquals("vaporizable")) materials[i] = new Material_Vaporizable(filePath);
             else throw new UnrecognizedMaterialException(type);
         }
 

@@ -15,7 +15,7 @@ out/
 
 *.class
 
-out/production/Fire Game/Burnable.class
+out/production/Fire Game/Material_Burnable.class
 
 out/production/Fire Game/Fire.class
 
@@ -29,8 +29,8 @@ out/production/Fire Game/Main.class
 
 out/production/Fire Game/Material.class
 
-out/production/Fire Game/Stable.class
+out/production/Fire Game/Material_Stable.class
 
 out/production/Fire Game/TApplet.class
 
-out/production/Fire Game/Visual.class
+out/production/Fire Game/Material_Visual.class
