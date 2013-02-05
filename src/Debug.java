@@ -27,11 +27,6 @@ public class Debug {
     }
 
     public void draw() {
-        /* Fire hitbox
-        p.fill(255, 120);
-        p.rectMode(p.CENTER);
-        p.rect(level.fire.pos.x, level.fire.pos.y, level.fire.hitBox, level.fire.hitBox); // */
-
         // If we want to draw something somewhere
         if (drawRect != null) {
             p.fill(drawRectColor);
