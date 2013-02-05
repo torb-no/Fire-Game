@@ -4,7 +4,7 @@ public class Fire {
 
     TApplet p;
     PVector pos;
-    float hitBox = 20;
+    float hitBox = 10;
 
     Fire(TApplet parent, PVector position) {
         p = parent;
