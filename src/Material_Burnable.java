@@ -14,21 +14,31 @@ public class Material_Burnable extends Material {
     public boolean fireIteration() {
         PVector prevFirePos = new PVector(fire.pos.x, fire.pos.y);
 
-        if (level.positionIsFlammable(fire.pos.x, fire.pos.y-upSpeed))
+        if (level.positionIsSpecificMaterial(fire.pos.x, fire.pos.y-upSpeed, Material_Burnable.class))
             fire.pos.y -= upSpeed;
-        else if (level.areaIsFlammable(fire.pos.x, fire.pos.y+downSpeed, 3, 1))
+        else if (!level.positionIsSpecificMaterial(fire.pos.x, fire.pos.y+downSpeed, Material_Stable.class))
             fire.pos.y += downSpeed;
+        /*else if (level.areaIsFlammable(fire.pos.x, fire.pos.y+downSpeed, 3, 1))
+            fire.pos.y += downSpeed; //*/
 
         if      (gameInput.moveLeft())  moveFireX(-sideSpeed);
         else if (gameInput.moveRight()) moveFireX(sideSpeed);
 
+
+
         // burn between previous pos and current pos
-        if (fire.pos.x != prevFirePos.x || fire.pos.y != prevFirePos.y) {
+
+        materialMask.beginDraw();
+        materialMask.stroke(0);
+        materialMask.point(fire.pos.x, fire.pos.y);
+        materialMask.endDraw();
+
+        /*if (fire.pos.x != prevFirePos.x || fire.pos.y != prevFirePos.y) {
             materialMask.beginDraw();
             materialMask.stroke(0);
             materialMask.point(prevFirePos.x, prevFirePos.y);
             materialMask.endDraw();
-        }
+        } // */
 
         return false;
     }

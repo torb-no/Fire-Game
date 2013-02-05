@@ -94,6 +94,14 @@ public class Level {
         return false;
     }
 
+    boolean positionIsSpecificMaterial(float x, float y, Class type) {
+        for (int i=materials.length-1; i!=0; i--) {
+            if (materials[i].canAffectFire && materials[i].materialExistsAtPosition(x, y))
+                return materials[i].getClass() == type;
+        }
+        return false;
+    }
+
     boolean areaIsFlammable(float x, float y, float width, float height) {
         for (int i=materials.length-1; i!=0; i--) {
             if (materials[i].canAffectFire && materials[i].materialExistsWithinArea(x, y, width, height))
