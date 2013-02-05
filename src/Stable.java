@@ -4,8 +4,4 @@ public class Stable extends Material {
         loadMap(filename);
     }
 
-    public boolean fireIteration() {
-        return false;
-    }
-
 }
