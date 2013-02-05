@@ -68,8 +68,10 @@ public class Level {
         boolean doFireIteration = true;
         for (int i=materials.length-1; i!=0; i--) { // In reverse because top most materials take precedence
             materials[i].iterate();
-            if (doFireIteration && materials[i].materialExistsWithinArea(fire.pos, fire.hitBox))
-                doFireIteration = materials[i].fireIteration();
+            for (int j=1; j<=fire.hitBox; j += 2) { // Wider and wider…
+                if (doFireIteration && materials[i].materialExistsWithinArea(fire.pos, j))
+                    doFireIteration = materials[i].fireIteration();
+            }
         }
     }
 
@@ -87,9 +89,9 @@ public class Level {
         return false;
     }
 
-    boolean areaIsFlammable(float x, float y, float size) {
+    boolean areaIsFlammable(float x, float y, float width, float height) {
         for (int i=materials.length-1; i!=0; i--) {
-            if (materials[i].canAffectFire && materials[i].materialExistsWithinArea(x, y, size))
+            if (materials[i].canAffectFire && materials[i].materialExistsWithinArea(x, y, width, height))
                 return materials[i].flammable;
         }
         return false;

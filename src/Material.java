@@ -39,10 +39,10 @@ public class Material {
         return materialExistsAtPosition((int)x, (int)y);
     }
 
-    public boolean materialExistsWithinArea(float posX, float posY, float size) {
-        float s2 = size / 2,
-              sx = posX - s2, sy = posY - s2, // left top corner
-              ex = posX + s2, ey = posY + s2; // right bottom corner
+    public boolean materialExistsWithinArea(float posX, float posY, float width, float height) {
+        float w2 = width / 2, h2 = height / 2,
+              sx = posX - w2, sy = posY - h2, // left top corner
+              ex = posX + w2, ey = posY + h2; // right bottom corner
         for (float x=sx; x<ex; x++) {
             for (float y=sy; y<ey; y++) {
                 if (materialExistsAtPosition(x, y))
@@ -50,6 +50,10 @@ public class Material {
             }
         }
         return false;
+    }
+
+    public boolean materialExistsWithinArea(float posX, float posY, float size) {
+        return materialExistsWithinArea(posX, posY, size, size);
     }
 
     public boolean materialExistsWithinArea(PVector pos, float size) {
