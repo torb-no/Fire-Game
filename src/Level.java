@@ -42,10 +42,14 @@ public class Level {
             }
         });
 
-        materials = new Material[materialFiles.length];
-        for (int i=0; i<materialFiles.length; i++) {
-            String type = materialFiles[i].substring(11).replace(".png", ""),
-                   filePath = p.assetPath("levels/" + name + "/" + materialFiles[i]);
+        // TODO: Implement hard coded Material_Air
+
+        materials = new Material[materialFiles.length+1]; //+1 to accommodate hard coded air material
+        materials[0] = new Material_Air();
+
+        for (int i=1; i<materials.length; i++) {
+            String type = materialFiles[i-1].substring(11).replace(".png", ""),
+                   filePath = p.assetPath("levels/" + name + "/" + materialFiles[i-1]);
             if      (type.contentEquals("visual"))      materials[i] = new Material_Visual(filePath);
             else if (type.contentEquals("stable"))      materials[i] = new Material_Stable(filePath);
             else if (type.contentEquals("burnable"))    materials[i] = new Material_Burnable(filePath);
