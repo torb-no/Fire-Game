@@ -9,6 +9,7 @@ public class Level {
     String name;
     GameInput gameInput;
 
+
     Level(TApplet parent, String name, GameInput gameInput) {
         p = parent;
         this.name = name;
@@ -55,10 +56,13 @@ public class Level {
             else throw new UnrecognizedMaterialException(type);
         }
 
+
+
     }
 
     public void iterate() {
         iterateMaterials();
+
     }
 
     public void draw() {

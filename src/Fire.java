@@ -5,6 +5,7 @@ public class Fire {
     TApplet p;
     PVector pos;
     float hitBox = 10;
+    FireSystem fireSystem;
 
     private final float energyMax = 30;
     private float energy;
@@ -13,12 +14,14 @@ public class Fire {
         p = parent;
         this.pos = position;
         energy = energyMax / 2;
+        fireSystem = new FireSystem(p, pos);
     }
 
     public void draw() {
-        p.noStroke();
-        p.fill(200, 200, 0, 150);
-        p.ellipse(pos.x, pos.y, energy, energy);
+        // Setup fire
+
+        fireSystem.iterate();
+        fireSystem.draw();
     }
 
     public void addEnergy(float amount) {
