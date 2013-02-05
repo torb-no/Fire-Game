@@ -1,6 +1,7 @@
 public class Material_Air extends Material {
 
-    public float downSpeed = 3;
+    public float downSpeed = 3,
+                 energyChange = -.1f;
 
     public boolean materialExistsWithinArea(float posX, float posY, float size) { return true; }
 
@@ -10,6 +11,7 @@ public class Material_Air extends Material {
         // Fall downwards…
         if (!level.positionIsSpecificMaterial(fire.pos.x, fire.pos.y+downSpeed, Material_Stable.class))
             fire.pos.y += downSpeed;
+            fire.addEnergy(energyChange);
         return false; //For consistency with the rest of the system, not really needed since air should always reside in the bottom stack
     }
 

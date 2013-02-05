@@ -3,7 +3,8 @@ import processing.core.*;
 public class Material_Burnable extends Material {
 
     public float upSpeed = 1f,
-                 downSpeed = 0.5f;
+                 downSpeed = 0.5f,
+                 energyChange = 1f;
     public int sideSpeed = 1;
 
     Material_Burnable(String filename) {
@@ -25,6 +26,8 @@ public class Material_Burnable extends Material {
         materialMask.stroke(0);
         materialMask.point(fire.pos.x, fire.pos.y);
         materialMask.endDraw();
+
+        fire.addEnergy(energyChange);
 
         return false;
     }
