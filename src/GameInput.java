@@ -20,9 +20,7 @@ public class GameInput {
                 xboxLeft = xboxController.getButton(2);
                 xboxRight = xboxController.getButton(3);
             }
-        }
-
-        // */
+        }   // */
 
     }
 
