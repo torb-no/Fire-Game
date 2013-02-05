@@ -42,8 +42,6 @@ public class Level {
             }
         });
 
-        // TODO: Implement hard coded Material_Air
-
         materials = new Material[materialFiles.length+1]; //+1 to accommodate hard coded air material
         materials[0] = new Material_Air();
 
