@@ -71,8 +71,11 @@ public class Level {
         for (int i=materials.length-1; i>=0; i--) { // In reverse because top most materials take precedence
             materials[i].iterate();
             for (int j=1; j<=fire.hitBox; j += 2) { // Wider and wider…
-                if (doFireIteration && materials[i].materialExistsWithinArea(fire.pos, j))
+                if (doFireIteration && materials[i].materialExistsWithinArea(fire.pos, j)) {
                     doFireIteration = materials[i].fireIteration();
+                    if (p.debug != null) p.println(materials[i].toString());
+                }
+
             }
         }
     }
