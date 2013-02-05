@@ -9,10 +9,10 @@ public class Main extends TApplet {
         smooth();
         noStroke();
         gameInput = new GameInput(this);
-        level = new Level(this, "Test4", gameInput);
-        //Soundtrack.play(this);
-        debug = new Debug(this, level);
-        frame.setTitle("Fire Game");
+        level = new Level(this, "Plattforms", gameInput);
+        Soundtrack.play(this);
+        //debug = new Debug(this, level);
+        frame.setTitle("Fire");
 
         loop(); // Stuff is loaded, let’s get going!
     }
@@ -20,6 +20,7 @@ public class Main extends TApplet {
     public void draw() {
         level.iterate();
         if (debug != null) debug.iterate();
+
         level.draw();
         if (debug != null) debug.draw();
     }
