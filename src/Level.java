@@ -70,7 +70,7 @@ public class Level {
 
     void iterateMaterials() {
         boolean doFireIteration = true;
-        for (int i=materials.length-1; i!=0; i--) { // In reverse because top most materials take precedence
+        for (int i=materials.length-1; i>=0; i--) { // In reverse because top most materials take precedence
             materials[i].iterate();
             for (int j=1; j<=fire.hitBox; j += 2) { // Wider and wider…
                 if (doFireIteration && materials[i].materialExistsWithinArea(fire.pos, j))
