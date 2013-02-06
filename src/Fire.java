@@ -22,6 +22,8 @@ public class Fire {
 
         fireSystem.iterate();
         fireSystem.draw();
+
+
     }
 
     public void addEnergy(float amount) {
