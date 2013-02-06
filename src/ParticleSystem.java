@@ -9,8 +9,11 @@ public class ParticleSystem {
     Particle[] particles;
     PVector origin;
     int newPerIteration = 1;
+
     int mode;
     PImage image;
+
+    int energy = 255;
 
     ParticleSystem(TApplet parent, PVector origin, int type) {
         p = parent;
@@ -33,10 +36,12 @@ public class ParticleSystem {
     }
 
     public void iterate() {
+
         int newParticleCounter = 0;
         for (int i=0; i<particles.length; i++) {
-            if (particles[i] != null && particles[i].dead())
+            if (particles[i] != null && particles[i].dead()) {
                 particles[i] = null;
+            }
 
             if (particles[i] != null)
                 particles[i].iterate();
@@ -77,6 +82,7 @@ public class ParticleSystem {
         }
 
         pa.image = image;
+        pa.energy = energy;
         pa.setup();
         return pa;
 

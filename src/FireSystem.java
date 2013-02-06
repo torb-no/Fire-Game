@@ -3,18 +3,21 @@ import processing.core.*;
 public class FireSystem {
 
     TApplet p;
-    PVector position;
+    Fire fire;
     ParticleSystem innerFire, outerFire;
 
-    FireSystem(TApplet parent, PVector position) {
+    FireSystem(TApplet parent, Fire fire) {
         p = parent;
-        this.position = position;
+        this.fire = fire;
 
-        innerFire = new ParticleSystem(p, position, ParticleSystem.InnerFire);
-        outerFire = new ParticleSystem(p, position, ParticleSystem.OuterFire);
+        innerFire = new ParticleSystem(p, fire.pos, ParticleSystem.InnerFire);
+        outerFire = new ParticleSystem(p, fire.pos, ParticleSystem.OuterFire);
     }
 
     public void iterate() {
+        outerFire.energy = (int) ((fire.energy / fire.energyMax) * 255);
+        innerFire.energy = (int) ((fire.energy / fire.energyMax) * 255);
+
         outerFire.iterate();
         innerFire.iterate();
     }

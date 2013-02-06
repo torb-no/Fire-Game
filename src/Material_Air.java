@@ -1,7 +1,7 @@
 public class Material_Air extends Material {
 
     public float downSpeed = 3,
-                 energyChange = -.1f;
+                 energyChange = -1f;
 
     public boolean materialExistsWithinArea(float posX, float posY, float size) { return true; }
 

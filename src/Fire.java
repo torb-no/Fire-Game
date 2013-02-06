@@ -7,14 +7,14 @@ public class Fire {
     float hitBox = 10;
     FireSystem fireSystem;
 
-    private final float energyMax = 30;
-    private float energy;
+    public final float energyMax = 30;
+    public float energy;
 
     Fire(TApplet parent, PVector position) {
         p = parent;
         this.pos = position;
-        energy = energyMax / 2;
-        fireSystem = new FireSystem(p, pos);
+        energy = energyMax / 10;
+        fireSystem = new FireSystem(p, this);
     }
 
     public void draw() {
