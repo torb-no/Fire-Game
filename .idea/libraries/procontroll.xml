@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="procontroll">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/lib/procontroll" />
+      <root url="jar://$PROJECT_DIR$/lib/procontroll/procontroll.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
-    <jarDirectory url="file://$PROJECT_DIR$/lib/procontroll" recursive="false" />
   </library>
 </component>
