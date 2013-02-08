@@ -18,8 +18,8 @@ public class Material_Burnable extends Material {
         else if (!level.positionIsSpecificMaterial(fire.pos.x, fire.pos.y+downSpeed, Material_Stable.class))
             fire.pos.y += downSpeed;
 
-        if      (gameInput.moveLeft())  moveFireX(-sideSpeed);
-        else if (gameInput.moveRight()) moveFireX(sideSpeed);
+        if      (gameInput != null && gameInput.moveLeft())  moveFireX(-sideSpeed);
+        else if (gameInput != null && gameInput.moveRight()) moveFireX(sideSpeed);
 
         // burn baby!
         materialMask.beginDraw();
