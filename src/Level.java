@@ -9,28 +9,13 @@ public class Level {
     String name;
     GameInput gameInput;
 
-
     Level(TApplet parent, String name, GameInput gameInput) {
         p = parent;
         this.name = name;
         this.gameInput = gameInput;
 
-        PImage fireImage = p.loadImage(p.assetPath("levels/" + name + "/fire_position.png"));
-        PVector firePosition = new PVector(0, 0);
-        for (int x=0; x<fireImage.width; x++) {
-            for (int y=0; y<fireImage.height; y++) {
-                int c = fireImage.get(x, y);
-                if (p.alpha(c) == 255 & p.brightness(c) == 255)
-                    firePosition = new PVector(x, y);
-            }
-        }
-        fire = new Fire(p, firePosition);
-
-        p.size(fireImage.width, fireImage.height, p.P2D);
-
         Material.p = p;
         Material.level = this;
-        Material.fire = fire;
         Material.gameInput = gameInput;
 
         // Load materials
@@ -43,7 +28,7 @@ public class Level {
             }
         });
 
-        materials = new Material[materialFiles.length+1]; //+1 to accommodate hard coded air material
+        materials = new Material[materialFiles.length+1]; //+1 to accommodate hard coded air material and meta material
         materials[0] = new Material_Air();
 
         for (int i=1; i<materials.length; i++) {
@@ -53,10 +38,15 @@ public class Level {
             else if (type.contentEquals("stable"))      materials[i] = new Material_Stable(filePath);
             else if (type.contentEquals("burnable"))    materials[i] = new Material_Burnable(filePath);
             else if (type.contentEquals("vaporizable")) materials[i] = new Material_Vaporizable(filePath);
+            else if (type.contentEquals("meta"))        materials[i] = new Material_Meta(filePath);
             else throw new UnrecognizedMaterialException(type);
         }
 
+        Material_Meta meta = (Material_Meta) materials[materials.length-1];
+        p.size(meta.materialImage.width, meta.materialImage.height);
+        fire = new Fire(p, meta.getStartFirePosition());
 
+        Material.fire = fire;
 
     }
 
