@@ -23,7 +23,7 @@ public class Material {
 
     void loadMap(String filename) {
         materialImage = p.loadImage(filename);
-        materialMask = p.createGraphics(materialImage.width, materialImage.height, p.P2D);
+        materialMask = p.createGraphics(materialImage.width, materialImage.height);
         p.setImageBasedOnAlpha(materialMask, materialImage);
     }
 
@@ -63,7 +63,7 @@ public class Material {
     public boolean fireIteration() {
         return true;
         // Overload to change how fire behaves when on this material
-        // Return true to prevent material underneath at same position from affecting the flame
+        // Return false to prevent material underneath at same position from affecting the flame
     }
 
 
