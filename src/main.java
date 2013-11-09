@@ -10,8 +10,7 @@ public class Main extends TApplet {
         noStroke();
         gameInput = new GameInput(this);
         level = new Level(this, "Plattforms", gameInput);
-        gameInput.setupArduino(); //Must be done after level is loaded
-        //Soundtrack.play(this);
+        Soundtrack.play(this);
         //debug = new Debug(this, level);
         frame.setTitle("Fire");
 
@@ -20,7 +19,6 @@ public class Main extends TApplet {
     }
 
     public void draw() {
-        gameInput.iterate();
         level.iterate();
         if (debug != null) debug.iterate();
 
