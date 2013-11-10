@@ -8,7 +8,10 @@ public class Material_Meta extends Material {
     }
 
     public void iterate() {
-
+        int black = p.color(0);
+        if (materialIsColorAtPosition(black, fire.pos.x, fire.pos.y)) {
+            p.exit();
+        }
     }
 
     public PVector getStartFirePosition() {
