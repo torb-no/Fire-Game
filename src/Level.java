@@ -80,14 +80,6 @@ public class Level {
         }
     }
 
-    boolean positionIsFlammable(float x, float y) {
-        for (int i=materials.length-1; i!=0; i--) {
-            if (materials[i].canAffectFire && materials[i].materialExistsAtPosition(x, y))
-                return materials[i].flammable;
-        }
-        return false;
-    }
-
     boolean positionIsSpecificMaterial(float x, float y, Class type) {
         for (int i=materials.length-1; i!=0; i--) {
             if (materials[i].canAffectFire && materials[i].materialExistsAtPosition(x, y))
@@ -96,9 +88,17 @@ public class Level {
         return false;
     }
 
+    boolean positionIsFlammable(float x, float y) {
+        for (int i=materials.length-1; i!=0; i--) {
+            if (materials[i].flammable && materials[i].materialExistsAtPosition(x, y))
+                return materials[i].flammable;
+        }
+        return false;
+    }
+
     boolean areaIsFlammable(float x, float y, float width, float height) {
         for (int i=materials.length-1; i!=0; i--) {
-            if (materials[i].canAffectFire && materials[i].materialExistsWithinArea(x, y, width, height))
+            if (materials[i].flammable && materials[i].materialExistsWithinArea(x, y, width, height))
                 return materials[i].flammable;
         }
         return false;
