@@ -1,6 +1,4 @@
 import processing.core.*;
-import procontroll.*;
-import processing.serial.*;
 
 public class GameInput {
 

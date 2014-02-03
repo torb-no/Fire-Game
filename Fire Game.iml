@@ -10,7 +10,6 @@
     <orderEntry type="library" name="library" level="application" />
     <orderEntry type="library" name="minim" level="application" />
     <orderEntry type="library" name="processing.serial" level="application" />
-    <orderEntry type="library" name="procontroll" level="project" />
     <orderEntry type="library" name="minim" level="application" />
     <orderEntry type="library" name="core" level="application" />
     <orderEntry type="library" name="minim" level="application" />
