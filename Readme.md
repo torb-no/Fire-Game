@@ -1,9 +1,13 @@
 # FireGame
 
-TODO: Update 2 and 3 for new Processing library locations.
-TODO: Create instructions for other OS-es
+An (unfinished) attempt at making a plattform game where you are a fire.
+
+**Torbjørn Vik Lunde**: Concept, programming
+**Ingrid Kjensli Moe**: Concept, art
 
 ## Instructions for OS X
+
+TODO: Update 2 and 3 for new Processing library locations.
 
 ### 1. Open the project using [IntelliJ](http://www.jetbrains.com/idea/download/)
 - Install it if you don’t have it
