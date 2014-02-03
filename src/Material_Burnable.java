@@ -46,7 +46,7 @@ public class Material_Burnable extends Material {
             }
         }
 
-        // Check bellow
+        // Check below
         for (int yOffset=0; yOffset<yLimit; yOffset++) {
             int y = (int) fire.pos.y + yOffset;
             if (level.positionIsFlammable(x, y)) {
