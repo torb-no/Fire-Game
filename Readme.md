@@ -1,9 +1,10 @@
 # FireGame
 
-An (unfinished) attempt at making a plattform game where you are a fire.
+An (unfinished) attempt at making a plattform game where you are a fire and have to move on burnable material.
 
 **Torbjørn Vik Lunde**: Concept, programming
-**Ingrid Kjensli Moe**: Concept, art
+**Ingrid Kjensli Moe**: Concept, level design, art
+**Simon Matthew Jones-Tyridal**: Music
 
 ## Instructions for OS X
 
