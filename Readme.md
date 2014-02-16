@@ -5,9 +5,10 @@ An (unfinished) attempt at making a plattform game where you are a fire and have
 ![Screenshot](Screenshot.png)
 
 ## Credits
-**Torbjørn Vik Lunde**: Concept, programming
-**Ingrid Kjensli Moe**: Concept, level design, art
-**Simon Matthew Jones-Tyridal**: Soundtrack
+
+- **Torbjørn Vik Lunde**: Concept, programming
+- **Ingrid Kjensli Moe**: Concept, level design, art
+- **Simon Matthew Jones-Tyridal**: Soundtrack
 
 ## Instructions for OS X
 
