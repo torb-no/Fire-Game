@@ -6,11 +6,13 @@ An (unfinished) attempt at making a plattform game where you are a fire and have
 
 ## Credits
 
-- **Torbjørn Vik Lunde**: Concept, programming
+- **Torb Lunde Miranda**: Concept, programming
 - **Ingrid Kjensli Moe**: Concept, level design, art
 - **Simon Matthew Jones-Tyridal**: Soundtrack
 
 ## Instructions for OS X
+
+Note: these instructions havn't been tested for many years.
 
 ### 1. Open the project using [IntelliJ](http://www.jetbrains.com/idea/download/)
 - Install it if you don’t have it
